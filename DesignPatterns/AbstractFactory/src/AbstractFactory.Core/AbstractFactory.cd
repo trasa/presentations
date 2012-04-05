@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Abstract Factory">
+    <Position X="1.583" Y="1.85" Height="0.275" Width="1.067" />
+  </Comment>
+  <Comment CommentText="Concrete Factory">
+    <Position X="1.592" Y="3.067" Height="0.266" Width="1.083" />
+  </Comment>
+  <Comment CommentText="Concrete Product">
+    <Position X="6.708" Y="3.15" Height="0.266" Width="1.083" />
+  </Comment>
+  <Comment CommentText="Abstract Product">
+    <Position X="6.642" Y="1.933" Height="0.266" Width="1.083" />
+  </Comment>
+  <Comment CommentText="Client uses ShipFactory and IWarship.">
+    <Position X="3.651" Y="1.225" Height="0.308" Width="2.4" />
+  </Comment>
+  <Comment CommentText="These Concrete implementations can vary and be swapped out at runtime.">
+    <Position X="2.609" Y="3.783" Height="0.275" Width="4.175" />
+  </Comment>
+  <Class Name="AbstractFactory.Core.ShipFactory" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACIAAAAAgCAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShipFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Core.Martians.MartianShipFactory" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAgAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Martians\MartianShipFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AbstractFactory.Core.Martians.MartianWarship" Collapsed="true">
+    <Position X="5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Martians\MartianWarship.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="AbstractFactory.Core.IWarship" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IWarship.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Tahoma" Size="8.4" />
+</ClassDiagram>

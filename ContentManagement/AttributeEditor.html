@@ -1,0 +1,486 @@
+﻿<html>
+<head>
+    <title>AspDotNetStorefront - Site Administration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+    TD, SPAN, LI, BODY, P { color: #444444; font-size: 11px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+OPTION, SELECT, INPUT, TEXT, TEXTAREA, SUBMIT { color: #444444; font-size: 11px; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+
+
+.tabs {position:relative; height: 27px; margin: 0; padding: 0; background:url("../../skins/skin_1/images/bar_off.gif") repeat-x; overflow:hidden}
+.tabs li {display:inline;}
+.tabs a:hover, .tabs a.tab-active {background:#fff url("../../skins/skin_1/images/bar_on.gif") repeat-x; border-right: 1px solid #fff} 
+.tabs a  {height: 27px; font:10px verdana, helvetica, sans-serif;font-weight:normal; position:relative; padding:6px 10px 10px 10px; margin: 0px -4px 0px 0px; color:#2B4353;text-decoration:none;border-left:1px solid #fff; border-right:1px solid #6D99B6;}
+.tab-container {background: #fff; border:1px solid #6D99B6;}
+.tab-panes { margin: 3px }
+
+.SectionTitle {font-weight: bold;}
+
+A {color:#0000FF; text-decoration: none; }
+A:visited {color:#0000FF; text-decoration: none; }
+A:link	  {color:#0000FF; text-decoration: none; }
+A:visited {color:#0000FF; text-decoration: none; }
+A:hover	  {color:#0000FF; text-decoration: underline; }
+
+.SiteMapRootNode { font-weight: bold; }
+.SiteMapParentNode { font-weight: normal; }
+.SiteMapLeafNode { font-weight: normal; }
+
+.sitemapul {list-style-type: disc; }
+
+#vertmenustyle1 {
+	width: 173px;
+	border-top: 0px solid #444444;
+	border-right: 0px solid #444444;
+	padding: 0 0 0em 0;
+	margin-bottom: 0em;
+	font-size: 10px;
+	font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+	background-color: #727272;
+	color: #FFFFFF;
+	}
+
+#vertmenustyle1 ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+		}
+		
+#vertmenustyle1 li {
+		border-bottom: 0px solid #444444;
+		margin: 0;
+		}
+
+#vertmenustyle1 li a {
+		display: block;
+		padding: 1px 2px 2px 0.5em;
+		border-left: 0px solid #444444;
+		border-right: 0px solid #444444;
+		background-color: #727272;
+		color: #fff;
+		text-decoration: none;
+		width: 100%;
+		}
+
+html:body #vertmenustyle1 li a {
+		width: auto;
+		}
+
+#vertmenustyle1 li a:hover {
+		border-left: 0px solid #444444;
+		border-right: 0px solid #444444;
+		background-color: #828282;
+		color: #fff;
+		}
+
+
+td.DarkTab {color: #FFFFFF; text-decoration: none; background-image: url(images/tabdark.gif); }
+.DarkTab a {color: #FFFFFF; text-decoration: none; }
+.DarkTab a:link {color: #FFFFFF; text-decoration: none; }
+.DarkTab a:visited {color: #FFFFFF; text-decoration: none; }
+.DarkTab a:active {color: #FFFFFF; text-decoration: none; }
+.DarkTab a:hover {color: #FFFF00; text-decoration: none; }
+
+td.DarkCell {color: #FFFFFF; text-decoration: none; background-color: #760A00; }
+.DarkCell a {color: #FFFFFF; text-decoration: none; }
+.DarkCell a:link {color: #FFFFFF; text-decoration: none; }
+.DarkCell a:visited {color: #FFFFFF; text-decoration: none; }
+.DarkCell a:active {color: #FFFFFF; text-decoration: none; }
+.DarkCell a:hover {color: #FFFF00; text-decoration: none; }
+
+
+A.PlainCategoryLink {color:#444444; text-decoration: none; }
+A.PlainCategoryLink:visited {color:#444444; text-decoration: none; }
+A.PlainCategoryLink:link	  {color:#444444; text-decoration: none; }
+A.PlainCategoryLink:visited {color:#44444; text-decoration: none; }
+A.PlainCategoryLink:hover	  {color:#444444; text-decoration: underline; }
+
+A.PlainSectionLink {color:#444444; text-decoration: none; }
+A.PlainSectionLink:visited {color:#444444; text-decoration: none; }
+A.PlainSectionLink:link	  {color:#444444; text-decoration: none; }
+A.PlainSectionLink:visited {color:#44444; text-decoration: none; }
+A.PlainSectionLink:hover	  {color:#444444; text-decoration: underline; }
+
+A.PlainManufacturerLink {color:#444444; text-decoration: none; }
+A.PlainManufacturerLink:visited {color:#444444; text-decoration: none; }
+A.PlainManufacturerLink:link	  {color:#444444; text-decoration: none; }
+A.PlainManufacturerLink:visited {color:#44444; text-decoration: none; }
+A.PlainManufacturerLink:hover	  {color:#444444; text-decoration: underline; }
+
+.CardinalText  { color: #0000FF; font-family: Verdana, Geneva, arial,helvetica; font-size: 11px; font-weight: normal; }
+
+.default { color: #444444; text-decoration: none; font-size: 11px; }
+.nav { color: #0000FF; font-size: 11px; }
+.navHi { color: #444444; font-size: 11px; }
+.navClean { font-size: 11px; text-decoration: none; }
+.greeting { color: #444444; font-weight: bold; }
+.error { color: #FF0000; }
+.errorLg { color: #FF0000; font-weight: bold; font-size: 13px; }
+.label { color: #444444; font-weight: normal; }
+.copyright { font-size: 11px; line-height: 16px }
+.title { color: #99CC33; font-weight: bold; font-size: 15px; }
+.titleGray { color: #9A9A9A; font-weight: bold; font-size: 15px; }
+.titleGrayLt { color: #9A9A9A; font-size: 15px; }
+.mbTitle { color: #000000; font-weight: bold; font-size: 13px; }
+.poptitle { color: #444444; font-weight: bold; font-size: 15px; }
+.blueBold { color: #9999CC; font-weight: bold; }
+
+.ShowPriceRegularPrompt { font-weight: bold; }
+.ShowPriceSalePrompt { color: red; font-weight: bold; }
+.ShowPriceExtendedPrompt { font-weight: bold; }
+
+.CallToOrder { font-weight: bold; }
+
+.DarkCell { background-color: #DDDDDD; }
+.MediumCell { background-color: #888888; }
+.LightCell { background-color: #EEEEEE; }
+.GreyCell { background-color: #CCCCCC; }
+
+.PlainCat  { color: #888888; font-size: 11px; font-weight: normal; }
+A.PlainCat {color: #888888; text-decoration: underline; }
+A.PlainCat:link {color: #888888; text-decoration: underline; }
+A.PlainCat:visited {color: #888888; text-decoration: underline; }
+A.PlainCat:active {color: #888888; text-decoration: underline; }
+A.PlainCat:hover {color: #888888; text-decoration: underline; }
+
+.dyop {color: #444444; font-size: 12px; font-weight: bold; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.dyop {color: #444444; text-decoration: none; }
+A.dyop:link {color: #444444; text-decoration: none; }
+A.dyop:visited {color: #444444; text-decoration: none; }
+A.dyop:active {color: #444444; text-decoration: none; }
+A.dyop:hover {color: #0000FF; text-decoration: none; }
+
+
+.dyop2 {color: #FF0000; font-size: 11px; font-weight: bold; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.dyop2 {color: #FF0000; text-decoration: none; }
+A.dyop2:link {color: #FF0000; text-decoration: none; }
+A.dyop2:visited {color: #FF0000; text-decoration: none; }
+A.dyop2:active {color: #FF0000; text-decoration: none; }
+A.dyop2:hover {color: #FF0000; text-decoration: underline; }
+
+
+.dyop_sm {color: #000000; font-size: 9px; font-weight: normal; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.dyop_sm {color: #000000; text-decoration: none; }
+A.dyop_sm:link {color: #000000; text-decoration: none; }
+A.dyop_sm:visited {color: #000000; text-decoration: none; }
+A.dyop_sm:active {color: #000000; text-decoration: none; }
+A.dyop_sm:hover {color: #0000FF; text-decoration: none; }
+
+.dyop_hdr {color: #000000; font-size: 9px; font-weight: bold; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.dyop_hdr {color: #000000; text-decoration: none; }
+A.dyop_hdr:link {color: #000000; text-decoration: none; }
+A.dyop_hdr:visited {color: #000000; text-decoration: none; }
+A.dyop_hdr:active {color: #000000; text-decoration: none; }
+A.dyop_hdr:hover {color: #0000FF; text-decoration: none; }
+
+.sb_nav {color: #000000; font-size: 11px; font-weight: normal; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.sb_nav {color: #000000; text-decoration: none; }
+A.sb_nav:link {color: #000000; text-decoration: none; }
+A.sb_nav:visited {color: #000000; text-decoration: none; }
+A.sb_nav:active {color: #000000; text-decoration: none; }
+A.sb_nav:hover {color: #0000FF; text-decoration: none; }
+
+.H1  { display:inline; color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; }
+A.H1 {color: #000000; text-decoration: none; }
+A.H1:link {color: #000000; text-decoration: none; }
+A.H1:visited {color: #000000; text-decoration: none; }
+A.H1:active {color: #000000; text-decoration: none; }
+A.H1:hover {color: #E0B301; text-decoration: none; }
+
+.Polltitle {color: #0000FF; font-weight: bold; }
+.PollAnswer {font-size: 9px; font-weight: normal; }
+.PollLink {font-size: 9px; font-weight: normal; }
+A.PollLink {text-decoration: none; }
+A.PollLink:link {text-decoration: none; }
+A.PollLink:visited {text-decoration: none; }
+A.PollLink:active {text-decoration: none; }
+A.PollLink:hover {text-decoration: underline; }
+
+.DarkCellText  { color: #FFFFFF; font-family: Verdana, Geneva, arial,helvetica; font-size: 11px; font-weight: normal; }
+A.DarkCellText {color: #FFFFFF; text-decoration: none; }
+A.DarkCellText:link {color: #FFFFFF; text-decoration: none; }
+A.DarkCellText:visited {color: #FFFFFF; text-decoration: none; }
+A.DarkCellText:active {color: #FFFFFF; text-decoration: none; }
+A.DarkCellText:hover {color: #BB9500; text-decoration: none; }
+
+.MediumCellText  { color: #FFFFFF; font-family: Verdana, Geneva, arial,helvetica; font-size: 11px; font-weight: normal; }
+A.MediumCellText {color: #FFFFFF; text-decoration: none; }
+A.MediumCellText:link {color: #FFFFFF; text-decoration: none; }
+A.MediumCellText:visited {color: #FFFFFF; text-decoration: none; }
+A.MediumCellText:active {color: #FFFFFF; text-decoration: none; }
+A.MediumCellText:hover {color: #BB9500; text-decoration: none; }
+
+.LightCellText  { color: #444444; font-family: Verdana, Geneva, arial,helvetica; font-size: 11px; font-weight: normal; }
+A.LightCellText {color: #444444; text-decoration: none; }
+A.LightCellText:link {color: #444444; text-decoration: none; }
+A.LightCellText:visited {color: #444444; text-decoration: none; }
+A.LightCellText:active {color: #444444; text-decoration: none; }
+A.LightCellText:hover {color: #BB9500; text-decoration: none; }
+
+.StaffNameText  { color: #000000; font-family: Verdana, Geneva, arial,helvetica; font-size: 18px; font-weight: bold; }
+.StaffTitleText  { color: #000000; font-family: Verdana, Geneva, arial,helvetica; font-size: 14px; font-weight: bold; }
+
+.OrderOptionsTitle  { color: #0000FF; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; }
+.OrderOptionsRowHeader  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+.OrderOptionsName  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9pt; font-weight: normal; }
+.OrderOptionsDescription  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; }
+.OrderOptionsPrice  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: bold; }
+
+.SectionTitleText  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; }
+A.SectionTitleText {color: #000000; text-decoration: underline; }
+A.SectionTitleText:link {color: #000000; text-decoration: underline; }
+A.SectionTitleText:visited {color: #000000; text-decoration: underline; }
+A.SectionTitleText:active {color: #000000; text-decoration: underline; }
+A.SectionTitleText:hover {color: #000000; text-decoration: underline; }
+
+.CondensedDarkCellText  { color: #FFFFFF; font-family: Verdana, Geneva, arial,helvetica; font-size: 9px; font-weight: normal; }
+A.CondensedDarkCellText {color: #FFFFFF; text-decoration: none; }
+A.CondensedDarkCellText:link {color: #FFFFFF; text-decoration: none; }
+A.CondensedDarkCellText:visited {color: #FFFFFF; text-decoration: none; }
+A.CondensedDarkCellText:active {color: #FFFFFF; text-decoration: none; }
+A.CondensedDarkCellText:hover {color: #FFBBBB; text-decoration: none; }
+
+.CondensedVariantText  { font-family: Verdana, Geneva, arial,helvetica; font-size: 9px; font-weight: normal; }
+.SmallGridText  { font-family: Verdana, Geneva, arial,helvetica; font-size: 9px; font-weight: normal; }
+
+.menulines { border:1px solid white; }
+.menulines a { text-decoration:none; color:black; }
+.darkcellmenulines { border:1px solid black; }
+.darkcellmenulines a { text-decoration:none; color:white; }
+
+.small { font-size: 9px; }
+.reg { font-size: 10px; }
+.big { font-size: 13px; }
+
+BR.sm { font-size: 9px;}
+P { margin-top: 9px; margin-bottom: 9px; }
+SUP { font-size: 10px; }
+
+.DarkCellLink {color:#EEEEEE;  }
+A.DarkCellLink {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLink:visited {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLink:link	  {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLink:visited {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLink:hover	  {color:#EEEEEE; text-decoration: underline; }
+
+.DarkCellLinkHdr {color:#EEEEEE; font-weight: bold; }
+A.DarkCellLinkHdr {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLinkHdr:visited {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLinkHdr:link	  {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLinkHdr:visited {color:#EEEEEE; text-decoration: none; }
+A.DarkCellLinkHdr:hover	  {color:#EEEEEE; text-decoration: underline; }
+
+A.TopBarLink {color:#000000; text-decoration: none; }
+A.TopBarLink:visited {color:#000000; text-decoration: none; }
+A.TopBarLink:link	  {color:#000000; text-decoration: none; }
+A.TopBarLink:visited {color:#000000; text-decoration: none; }
+A.TopBarLink:hover	  {color:#FFFFFF; text-decoration: none; }
+
+.SBCatName {color: #444444; font-size: 9px; font-weight: bold; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.SBCatName {color: #444444; text-decoration: none; }
+A.SBCatName:link {color: #444444; text-decoration: none; }
+A.SBCatName:visited {color: #444444; text-decoration: none; }
+A.SBCatName:active {color: #444444; text-decoration: none; }
+A.SBCatName:hover {color: #444444; text-decoration: underline; }
+
+.SBProdName {color: #444444; font-size: 9px; font-weight: normal; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.SBProdName {color: #444444; text-decoration: none; }
+A.SBProdName:link {color: #444444; text-decoration: none; }
+A.SBProdName:visited {color: #444444; text-decoration: none; }
+A.SBProdName:active {color: #444444; text-decoration: none; }
+A.SBProdName:hover {color: #444444; text-decoration: underline; }
+
+.foot {color: #000000; font-size: 9.5px; font-weight: normal; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.foot {color: #000000; text-decoration: none; }
+A.foot:link {color: #000000; text-decoration: none; }
+A.foot:visited {color: #000000; text-decoration: none; }
+A.foot:active {color: #000000; text-decoration: none; }
+A.foot:hover {color: #FFFFFF; text-decoration: underline; }
+
+.head {color: #444444; font-weight: normal; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.head {color: #444444; text-decoration: none; }
+A.head:link {color: #444444; text-decoration: none; }
+A.head:visited {color: #444444; text-decoration: none; }
+A.head:active {color: #444444; text-decoration: none; }
+A.head:hover {color: #444444; text-decoration: underline; }
+
+.username {color: #444444; font-weight: normal; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.username {color: #444444; text-decoration: none; }
+A.username:link {color: #444444; text-decoration: none; }
+A.username:visited {color: #444444; text-decoration: none; }
+A.username:active {color: #444444; text-decoration: none; }
+A.username:hover {color: #444444; text-decoration: underline; }
+
+.productnavlink {color: #444444; font-weight: bold; font-size: 12px; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.productnavlink {color: #444444; text-decoration: none }
+A.productnavlink:link {color: #444444; text-decoration: none; }
+A.productnavlink:visited {color: #444444; text-decoration: none; }
+A.productnavlink:active {color: #444444; text-decoration: none; }
+A.productnavlink:hover {color: #0000FF; text-decoration: underline; }
+
+A.homelist {color: #444444; font-size: 16px; font-weight: bold; text-decoration: none; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; }
+A.homelist:link {color: #444444; text-decoration: none; }
+A.homelist:visited {color: #444444; text-decoration: none; }
+A.homelist:active {color: #444444; text-decoration: none; }
+A.homelist:hover {color: #0000FF; text-decoration: none; }
+
+.ProductNameText  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; }
+.ProductMSRPText  { font-weight: bold; }
+.ProductSaveText  { color: #FF0000; font-size: 13px; font-weight: bold; }
+.ProductPriceText  { color: #EC008C; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: normal; }
+.ProductSKUText  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; }
+.ProductDetailsText  { color: #000000; font-family: Verdana, Geneva, Arial, Helvetica, sans-serif; font-size: 9px; font-weight: bold; }
+
+.PageNumber  { color: #000000; font-family: Verdana, Geneva, arial,helvetica; font-size: 11px; font-weight: bold; }
+A.PageNumber {color: #DD0000; text-decoration: underline; }
+A.PageNumber:link {color: #DD0000; text-decoration: underline; }
+A.PageNumber:visited {color: #DD0000; text-decoration: underline; }
+A.PageNumber:active {color: #DD0000; text-decoration: underline; }
+A.PageNumber:hover {color: #DD0000; text-decoration: underline; }
+
+
+.username {color: #444444; font-weight: normal; text-decoration: none;}
+A.username {color: #444444; text-decoration: none;}
+A.username:link {color: #444444; text-decoration: none; }
+A.username:visited {color: #444444; text-decoration: none; }
+A.username:active {color: #444444; text-decoration: none; }
+A.username:hover {color: #444444; text-decoration: underline; }
+
+
+    </style>
+</head>
+<body rightmargin="4" leftmargin="4" topmargin="4" marginwidth="4" marginheight="4"
+    bgcolor="#ffffff">
+    <table border="2">
+        <tr>
+            <td>
+                <table>
+                    <tr valign="center">
+                        <td align="right" valign="center" width="25%">
+                            Type Defn: &nbsp;</td>
+                        <td align="left" valign="top">
+                            <input id="Text2" maxlength="100" name="Name" size="50" value="DropDownList" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td />
+        </tr>
+        <tr>
+            <td />
+            <td>
+                <table border="2">
+                    <tr>
+                        <td>
+                            <table cellpadding="4" cellspacing="0" width="100%">
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%">
+                                        *Attribute Name: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <input id="Text1" maxlength="100" name="Name" size="50" value="Product Type" /></td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%">
+                                        *Attribute Type: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <select size="1">
+                                            <option>DropDownList</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%" style="height: 77px">
+                                        *Choices: &nbsp;</td>
+                                    <td align="left" valign="top" style="height: 77px">
+                                        &nbsp;<textarea id="TextArea1" style="width: 301px; height: 66px">Generic Product
+Gift Card Certificate
+Gift Card Email
+                            </textarea></td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td />
+                        <td>
+                            <table cellpadding="4" cellspacing="0" width="100%">
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%">
+                                        *Product Name: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <input id="Name" maxlength="100" name="Name" size="50" /></td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center">
+                                        *Product Type: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <select name="ProductTypeID" size="1">
+                                            <option selected="selected" value="0">SELECT ONE</option>
+                                            <option value="1">Generic Product</option>
+                                            <option value="102">Gift Card Certificate</option>
+                                            <option value="101">Gift Card Email</option>
+                                            <option value="100">Gift Card Physical</option>
+                                            <option value="2">Kit Product</option>
+                                            <option value="3">Pack Product</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center">
+                                        *Tax Class: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <select name="TaxClassID" size="1">
+                                            <option value="5">Alcohol</option>
+                                            <option selected="selected" value="1">Goods</option>
+                                            <option value="2">Services</option>
+                                            <option value="3">Shipping</option>
+                                            <option value="4">Tobacco</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center">
+                                        *Manufacturer: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <select name="ManufacturerID" size="1">
+                                            <option selected="selected" value="0">SELECT ONE</option>
+                                            <option value="1">Generic Mfg</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center">
+                                        Distributor: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <select name="DistributorID" size="1">
+                                            <option selected="selected" value="0">SELECT ONE</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%">
+                                        SKU: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <input maxlength="50" name="SKU" size="50" />
+                                    </td>
+                                </tr>
+                                <tr valign="center">
+                                    <td align="right" valign="center" width="25%">
+                                        Manufacturer Part #: &nbsp;</td>
+                                    <td align="left" valign="top">
+                                        <input maxlength="50" name="ManufacturerPartNumber" size="50" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

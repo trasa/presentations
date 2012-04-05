@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="BindingQuestion.Views.ChildView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Grid>
+		<Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="800" Height="600" Opacity="0.765" Fill="#FF8a8a8a" />
+		<Border CornerRadius="30" Background="#FF5C7590" Width="600" Height="250">
+			<StackPanel Margin="7, 9, 12, 7">
+				<TextBlock Text="Hey, create a new user already." Foreground="White" />
+				<Button x:Name="btnGoAway" Content="Go Away" Click="btnGoAway_Click" />
+			</StackPanel>
+		</Border>
+	</Grid>
+</UserControl>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="AMSConsolidated" Class="ExampleContextDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sqldev\sql2005;Initial Catalog=AMSConsolidated;Integrated Security=True" SettingsObjectName="AssociationBug.Properties.Settings" SettingsPropertyName="AMSConsolidatedConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TargetView" Member="Views">
+    <Type Name="Views">
+      <Column Name="TargetViewID" Member="ViewID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Target_Type_ID" Member="SomeTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Target_GUID" Member="SomeValueID" Type="System.Guid" DbType="UniqueIdentifier NOT NULL" CanBeNull="false" />
+      <Association Name="Views_Elements" Member="Elements" ThisKey="ViewID" OtherKey="ViewID" Type="Elements" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Note" Member="Elements">
+    <Type Name="Elements">
+      <Column Name="NoteID" Member="ElementID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TargetViewID" Member="ViewID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NotePriority" Member="SomeValue" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NoteActive" Member="SomeOtherValue" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="Views_Elements" Member="Views" ThisKey="ViewID" OtherKey="ViewID" Type="Views" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

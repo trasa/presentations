@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileCommand.Web", "MissileCommand.Web\MissileCommand.Web.csproj", "{AB28FCD4-1C35-4B31-AB26-0C9DAA714537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileCommand.Core", "MissileCommand.Core\MissileCommand.Core.csproj", "{B489626F-4086-4811-BD9A-0EFA688309CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MissileCommand.Test", "MissileCommand.Test\MissileCommand.Test.csproj", "{DBC3AFAC-3230-464A-877B-2B46911F95E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB28FCD4-1C35-4B31-AB26-0C9DAA714537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB28FCD4-1C35-4B31-AB26-0C9DAA714537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB28FCD4-1C35-4B31-AB26-0C9DAA714537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB28FCD4-1C35-4B31-AB26-0C9DAA714537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B489626F-4086-4811-BD9A-0EFA688309CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B489626F-4086-4811-BD9A-0EFA688309CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B489626F-4086-4811-BD9A-0EFA688309CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B489626F-4086-4811-BD9A-0EFA688309CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBC3AFAC-3230-464A-877B-2B46911F95E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBC3AFAC-3230-464A-877B-2B46911F95E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBC3AFAC-3230-464A-877B-2B46911F95E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBC3AFAC-3230-464A-877B-2B46911F95E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

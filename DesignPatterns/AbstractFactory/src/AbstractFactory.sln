@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Simple", "AbstractFactory.Simple\AbstractFactory.Simple.csproj", "{2CE71174-6693-4650-B37A-396B72C4B2E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.Core", "AbstractFactory.Core\AbstractFactory.Core.csproj", "{0952B47A-5268-4723-B90C-C6A3DFAD28A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory.SpringLoaded", "AbstractFactory.SpringLoaded\AbstractFactory.SpringLoaded.csproj", "{A5C5A837-1122-4ADD-A5B3-0BF618C55FEE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CE71174-6693-4650-B37A-396B72C4B2E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CE71174-6693-4650-B37A-396B72C4B2E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CE71174-6693-4650-B37A-396B72C4B2E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CE71174-6693-4650-B37A-396B72C4B2E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0952B47A-5268-4723-B90C-C6A3DFAD28A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0952B47A-5268-4723-B90C-C6A3DFAD28A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0952B47A-5268-4723-B90C-C6A3DFAD28A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0952B47A-5268-4723-B90C-C6A3DFAD28A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C5A837-1122-4ADD-A5B3-0BF618C55FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C5A837-1122-4ADD-A5B3-0BF618C55FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C5A837-1122-4ADD-A5B3-0BF618C55FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C5A837-1122-4ADD-A5B3-0BF618C55FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

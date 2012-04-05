@@ -1,0 +1,11 @@
+why bother to unit test?  http://www.ipl.com/pdf/p0828.pdf
+
+http://www.nunit.org/
+
+http://www.aptest.com/testtypes.html
+
+http://www.aptest.com/testtypes.html - types of testing
+
+http://www.coleyconsulting.co.uk/testtype.htm - test types
+
+quickstart: http://www.nunit.org/files/QuickStart.doc

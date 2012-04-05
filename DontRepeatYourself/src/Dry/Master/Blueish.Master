@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Blueish.master.cs" Inherits="Dry.Master.Blueish" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Code Camp 2009</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/include/blueish.css" media="screen" />
+</head>
+<body>
+    <form id="frm" runat="server">
+        <div id="wrap">
+            <div id="header">
+                <asp:ContentPlaceHolder runat="Server" ID="HeaderContent">
+                    <h1>Don't Repeat Yourself</h1>
+                    <h2>Awesome Contact Management System that is Awesome</h2>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="breadcrumbs">
+                <asp:ContentPlaceHolder runat="Server" ID="BreadcrumbContent">
+                    You are here : <a href="~/Default.aspx">Home</a> &middot; <a href="#">Somewhere Else</a> &middot; Third Place
+                </asp:ContentPlaceHolder>                    
+            </div>
+            <div id="left">
+                <asp:ContentPlaceHolder runat="Server" ID="LeftContent">
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder runat="server" ID="NavigationContent">
+                    <ul>
+                        <li><a href="ClientContacts.aspx">Client Contacts</a></li>
+                        <li><a href="AgentContacts.aspx">Agent Contacts</a></li>
+                    </ul>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="center">
+                <asp:ContentPlaceHolder runat="server" ID="CenterContent">
+                    <h2>Center Content...</h2>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce fermentum neque eget nisl. Quisque tincidunt. 
+                    Proin dictum laoreet dui. Nulla justo. Quisque tortor sapien, gravida nec, sollicitudin non, placerat eu, lectus. 
+                    Morbi placerat. Quisque ipsum turpis, placerat eu, pretium vitae, mattis vitae, nunc. Maecenas at turpis a magna hendrerit 
+                    luctus. Pellentesque auctor dui sit amet nulla vehicula auctor. Fusce purus felis, congue a, placerat vitae, 
+                    vestibulum vitae, nulla. Fusce ultrices purus quis purus. Nulla facilisi. Quisque consectetuer diam et magna.
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="right">
+                <asp:ContentPlaceHolder runat="server" ID="RightContent">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="clear"> </div>            
+            <div id="footer">
+                <asp:ContentPlaceHolder runat="Server" ID="FooterContent">
+                    Tony Rasa | trasa@meancat.com <br />
+                    Design by Minimalistic Design - http://www.minimalistic-design.net
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

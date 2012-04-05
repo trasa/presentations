@@ -1,0 +1,2115 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlackfinDataAccess</name>
+    </assembly>
+    <members>
+        <member name="T:Blackfin.DataAccess.ConnectionRequiredException">
+            <summary>
+            An exception thrown if the Connection given to a class is not valid.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConnectionRequiredException.#ctor">
+            <summary>
+            Create a ConnectionRequiredException.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConnectionRequiredException.#ctor(System.String)">
+            <summary>
+            Create a ConnectionRequiredException.
+            </summary>	
+            <param name="msg">A Message describing the details of the exception.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConnectionRequiredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Create a ConnectionRequiredException.
+            </summary>
+            <param name="msg">A Message describing the details of the exception</param>
+            <param name="inner">Details of an inner exception</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConnectionRequiredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Create a ConnectionRequiredException. 
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConnectionRequiredException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Streams all the exception properties into the SerializationInfo class for the given StreamingContext.
+            </summary>
+            <param name="info">The SerializationInfo object.</param>
+            <param name="context">The StreamingContext object.</param>
+            <example>
+            	<code>
+            		base.GetObjectData(info, context);
+            		// TODO: your values here
+            		info.AddValue("variableName", variableName);
+            	</code>
+            </example>
+        </member>
+        <member name="T:Blackfin.DataAccess.DBTypeMismatchException">
+            <summary>
+            Exception occurs when two components of BDAC are expecting mismatched specific 
+            implementations of an interface - for example an Oracle component receiving a
+            SqlServer DataReader.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.#ctor">
+            <summary>
+            Create a DBTypeMismatchException.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.#ctor(System.String)">
+            <summary>
+            Create a DBTypeMismatchException.
+            </summary>	
+            <param name="msg">A Message describing the details of the exception.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.#ctor(System.String,System.Type)">
+            <summary>
+            Create a DBTypeMismatchException
+            </summary>
+            <param name="expectedTypeName">The name of the type we were expecting.</param>
+            <param name="actualType">The actual type we received..</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.#ctor(System.String,System.Exception)">
+            <summary>
+            Create a DBTypeMismatchException.
+            </summary>
+            <param name="msg">A Message describing the details of the exception</param>
+            <param name="inner">Details of an inner exception</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Create a DBTypeMismatchException. 
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DBTypeMismatchException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Streams all the exception properties into the SerializationInfo class for the given StreamingContext.
+            </summary>
+            <param name="info">The SerializationInfo object.</param>
+            <param name="context">The StreamingContext object.</param>
+            <example>
+            	<code>
+            		base.GetObjectData(info, context);
+            		// TODO: your values here
+            		info.AddValue("variableName", variableName);
+            	</code>
+            </example>
+        </member>
+        <member name="P:Blackfin.DataAccess.DBTypeMismatchException.ActualType">
+            <summary>
+            Gets the actual type we received.
+            </summary>
+            <value>The actual type.</value>
+        </member>
+        <member name="T:Blackfin.DataAccess.NullableDataReader">
+            <summary>
+            Provides a way of reading a forward-only stream of rows from a SQL Server database, 
+            with support for Nullable types.
+            </summary>
+        </member>
+        <member name="T:Blackfin.DataAccess.INullableDataRecord">
+            <summary>
+            Provides access to the column values within each row for a DataReader, 
+            with emphasis on Nullable types.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableBoolean(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable boolean
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableByte(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable byte
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableChar(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable char
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableDateTime(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable DateTime
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableDecimal(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable decimal
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableDouble(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable double
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableFloat(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable float
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableInt16(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable Int16
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableInt32(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable int
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableInt64(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable Int64
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.INullableDataRecord.GetNullableString(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a string.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.Close">
+            <summary>
+            Closes the <see cref="T:System.Data.IDataReader"></see> 0bject.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetBoolean(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a Boolean.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetByte(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a byte.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column as a byte.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a stream of bytes from the specified column offset into the buffer
+               an array starting at the given buffer offset.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <param name="fieldOffset">The index within the field from which to begin the read operation.</param>
+            <param name="buffer">The buffer into which to read the stream of bytes.</param>
+            <param name="bufferoffset">The index for buffer to begin the write operation.</param>
+            <param name="length">The maximum length to copy into the buffer.</param>
+            <returns>The actual number of bytes read.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetChar(System.Int32)">
+            <summary>
+            Gets the character value of the specified column.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The character value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)">
+            <summary>
+             Reads a stream of characters from the specified column offset into the buffer
+                as an array starting at the given buffer offset.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <param name="fieldoffset">The index within the field from which to begin the read operation.</param>
+            <param name="buffer">The buffer into which to read the stream of bytes.</param>
+            <param name="bufferoffset">The index for buffer to begin the write operation.</param>
+            <param name="length">The maximum length to copy into the buffer.</param>
+            <returns>The actual number of characters read.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetDataTypeName(System.Int32)">
+            <summary>
+            Gets the name of the source data type.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The name of the back-end data type.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetDateTime(System.Int32)">
+            <summary>
+             Gets the value of the specified column as a System.DateTime object.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetDecimal(System.Int32)">
+            <summary>
+             Gets the value of the specified column as a System.Decimal object.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetDouble(System.Int32)">
+            <summary>
+              Gets the value of the specified column as a double-precision floating point number.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetFieldType(System.Int32)">
+            <summary>
+            Gets the <see cref="T:System.Type"></see> information corresponding to the type of <see cref="T:System.Object"></see> that would be returned from <see cref="M:System.Data.IDataRecord.GetValue(System.Int32)"></see>.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The System.Type that is the data type of the object. If the type does not
+                exist on the client, in the case of a User-Defined Type (UDT) returned from
+                the database, GetFieldType returns null.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetFloat(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a single-precision floating point number.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetGuid(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a globally unique identifier (GUID).
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the specified column.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetInt16(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a 16-bit signed integer.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetInt32(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a 32-bit signed integer.
+            </summary>
+            <param name="i"> The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetInt64(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a 64-bit signed integer.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The value of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetName(System.Int32)">
+            <summary>
+            Gets the name of the specified column.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            The name of the specified column.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetOrdinal(System.String)">
+            <summary>
+             Gets the column ordinal, given the name of the column.
+            </summary>
+            <param name="name">The name of the column.</param>
+            <returns>The zero-based column ordinal.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetSchemaTable">
+            <summary>
+            Returns a <see cref="T:System.Data.DataTable"></see> that describes the column metadata of the <see cref="T:System.Data.IDataReader"></see>.
+            </summary>
+            <returns>
+            A <see cref="T:System.Data.DataTable"></see> that describes the column metadata.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.IDataReader"></see> is closed. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetString(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a string.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the specified column.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+            <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetValue(System.Int32)">
+            <summary>
+            Gets the value of the specified column in its native format.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+            This method returns System.DBNull for null database columns.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetValues(System.Object[])">
+            <summary>
+            Gets all attribute columns in the collection for the current row.
+            </summary>
+            <param name="values">An array of System.Object into which to copy the attribute columns.</param>
+            <returns>
+            The number of instances of System.Object in the array.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.IsDBNull(System.Int32)">
+            <summary>
+            Gets a value that indicates whether the column contains non-existent or missing values.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>
+             true if the specified column value is equivalent to System.DBNull; otherwise false.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.NextResult">
+            <summary>
+            Advances the data reader to the next result, when reading the results of batch SQL statements.
+            </summary>
+            <returns>
+            true if there are more rows; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.Read">
+            <summary>
+            Advances the <see cref="T:System.Data.IDataReader"></see> to the next record.
+            </summary>
+            <returns>
+            true if there are more rows; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetData(System.Int32)">
+            <summary>
+            Gets an <see cref="T:System.Data.IDataReader"></see> to be used when the field points to more remote structured data.
+            </summary>
+            <param name="i">The index of the field to find.</param>
+            <returns>
+            An <see cref="T:System.Data.IDataReader"></see> to be used when the field points to more remote structured data.
+            </returns>
+            <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount"></see>. </exception>
+        </member>
+        <member name="F:Blackfin.DataAccess.NullableDataReader.alreadyDisposed">
+            <summary>
+             Has this object already been disposed?  (don't need to dispose twice)
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.Dispose">
+            <summary>
+             Safely dispose of this object.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <see cref="T:Blackfin.Util.NullableSqlDataReader"/> is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources
+            </summary>
+            <param name="isDisposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableBoolean(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable boolean
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableByte(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable byte
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableChar(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable char
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableDateTime(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable DateTime
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableDecimal(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable decimal
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableDouble(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable double
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableFloat(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable float
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableInt16(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable Int16
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableInt32(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable int
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableInt64(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a nullable Int64
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableDataReader.GetNullableString(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a String.
+            </summary>
+            <remarks>
+            Nullable&lt;String&gt; doesn't actually exist.  This returns null if
+            the column data is null and is named to match the other Nullable methods.
+            </remarks>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.InnerDataReader">
+            <summary>
+            This exposes access to the inner IDataReader contained by NullableDataReader.
+            This should only be used as a last resort, and never outside of this assembly.
+            </summary>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.Depth">
+            <summary>
+            Gets a value indicating the depth of nesting for the current row.
+            </summary>
+            <value></value>
+            <returns>The depth of nesting for the current row.</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.FieldCount">
+            <summary>
+            Gets the number of columns in the current row.
+            </summary>
+            <value></value>
+            <returns>When not positioned in a valid recordset, 0; otherwise the number of columns in the current record. The default is -1.</returns>
+            <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.IsClosed">
+            <summary>
+            Gets a value indicating whether the instance is closed.
+            </summary>
+            <value></value>
+            <returns>true if the data reader is closed; otherwise, false.</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.RecordsAffected">
+            <summary>
+            Gets the number of rows changed, inserted, or deleted by execution of the SQL statement.
+            </summary>
+            <value></value>
+            <returns>The number of rows changed, inserted, or deleted; 0 if no rows were affected or the statement failed; and -1 for SELECT statements.</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.Item(System.Int32)">
+            <summary>
+                Gets the value of the specified column in its native format given the column ordinal.
+            </summary>
+            <value>The value of the specified column in its native format.</value>
+            <exception cref="T:System.IndexOutOfRangeException">
+            The index passed was outside the range of 0 through System.Data.IDataRecord.FieldCount.
+            </exception>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableDataReader.Item(System.String)">
+            <summary>
+            Gets the value of the specified column in its native format given the column name.
+            </summary>
+            <value>The value of the specified column in its native format.</value>
+            <exception cref="T:System.IndexOutOfRangeException">
+            No column with the specified name was found.
+            </exception>
+        </member>
+        <member name="T:Blackfin.DataAccess.DataReaderContainer">
+            <summary>
+            A Container for a SqlDataReader element.
+            DataReaders require special handling with regard to their Connection and
+            open/close status, this encapsulates that handling requirement.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.#ctor(Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Construct a DataReaderContainer that will use the given ConnectionFactory.
+            </summary>
+            <param name="connectionFactory">An object that will create connections.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.#ctor(Blackfin.DataAccess.IConnectionFactory,System.String)">
+            <summary>
+            Construct a DataReaderContainer that will use the given ConnectionFactory and execute some SQL.
+            </summary>
+            <param name="connectionFactory">An object that will create connections.</param>
+            <param name="sql">A fully-formed SELECT statement.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.#ctor(Blackfin.DataAccess.IConnectionFactory,System.Text.StringBuilder)">
+            <summary>
+            Construct a DataReaderContainer that will use the given ConnectionFactory and execute some SQL.
+            </summary>
+            <param name="connectionFactory">An object that will create connections.</param>
+            <param name="sql">A StringBuilder representing a fully-formed SELECT statement.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Open(System.String)">
+            <summary>
+            Retrieve a SqlDataReader for the given SQL.
+            </summary>
+            <param name="sql">The set-returning SQL Statement to execute.</param>
+            <returns>An IDataReader containing the set described by sql.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Open">
+            <summary>
+            Retrieve a SqlDataReader for the SQL given in the constructor.
+            </summary>
+            <returns>A SqlDataReader containing the set described by sql.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Open(System.Text.StringBuilder)">
+            <summary>
+            Retrieve a SqlDataReader for the SQL given in the constructor.
+            </summary>
+            <param name="sql">The set-returning SQL Statement to execute.</param>
+            <returns>A SqlDataReader containing the set described by sql.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Close">
+            <summary>
+            Safely close the SqlDataReader.
+            </summary>
+            <remarks>You should be Disposing these objects instead of closing them.</remarks>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.InternalClose">
+            <summary>
+            Safely closes the SqlDataReader.
+            </summary>
+            <remarks>
+            You should be disposing these objects instead of closing them.
+            Moved to private method to avoid Warning-As-Error from Obsolete call.
+            </remarks>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection(System.String,Blackfin.DataAccess.IConnectionFactory,System.Type)">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr)".
+            </remarks>
+            <example>
+            A call to ExecuteCollection:
+            <code>
+            ICollection col = DataReaderContainer.ExecuteCollection(
+            						someSql,
+            						new ConnectionFactory(),
+            						typeof(Thing));
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr)</code>
+            </example>
+            <param name="sql">the SELECT statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="objType">The type of object to create</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an ICollection of type objType objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection(System.String,Blackfin.DataAccess.IConnectionFactory,System.Type,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])".
+            </remarks>
+            <example>
+            A call to ExecuteCollection:
+            <code>
+            ICollection col = DataReaderContainer.ExecuteCollection(
+            						someSql,
+            						new ConnectionFactory(),
+            						typeof(Thing),
+            						"Hello World",
+            						42);
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr, string message, int value)</code>
+            The order of arguments is important.
+            </example>
+            <param name="sql">the SELECT statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="objType">The type of object to create</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an ICollection of type objType objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Type)">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])".
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  
+            <note type="caution">It is is the responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            A call to ExecuteCollection:
+            <code>
+            ICollection col = DataReaderContainer.ExecuteCollection(
+            						someSql,
+            						new ConnectionFactory(),
+            						typeof(Thing));
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr)</code>
+            The order of arguments is important.
+            </example>
+            <param name="cmd">the command statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="objType">The type of object to create</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an ICollection of type objType objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Type,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])".
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  
+            <note type="caution">It is is the responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            A call to ExecuteCollection:
+            <code>
+            ICollection col = DataReaderContainer.ExecuteCollection(
+            						someSql,
+            						new ConnectionFactory(),
+            						typeof(Thing),
+            						"Hello World",
+            						42);
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr, string message, int value)</code>
+            The order of arguments is important.
+            </example>
+            <param name="cmd">the command statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="objType">The type of object to create</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an ICollection of type objType objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection``1(System.String,Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the generic type given.  This Type must have a constructor with the 
+            signature "public MyTime(SqlDataReader dr)"
+            </remarks>
+            <typeparam name="T">The type of objects to create</typeparam>
+            <param name="sql">the SELECT statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when T doesn't support the right constructor signature.</exception>
+            <returns>a Collection of type T objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection``1(System.String,Blackfin.DataAccess.IConnectionFactory,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the generic type given.  This Type must have a constructor with the 
+            signature "public MyTime(SqlDataReader dr, [types in constructorArgs])"
+            </remarks>
+            <typeparam name="T">The type of objects to create</typeparam>
+            <param name="sql">the SELECT statement to run</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when T doesn't support the right constructor signature.</exception>
+            <returns>a Collection of type T objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection``1(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the generic type given.  This Type must have a constructor with the 
+            signature "public MyTime(SqlDataReader dr)"
+            </remarks>
+            <typeparam name="T">The type of objects to create</typeparam>
+            <param name="cmd">the DataReader-returning Command to execute</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when T doesn't support the right constructor signature.</exception>
+            <returns>a Collection of type T objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteCollection``1(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns a set of objects.
+            </summary>
+            <remarks>
+            The object is identified by the generic type given.  This Type must have a constructor with the 
+            signature "public MyTime(SqlDataReader dr, [types in constructorArgs])"
+            </remarks>
+            <typeparam name="T">The type of objects to create</typeparam>
+            <param name="cmd">the DataReader-returning Command to execute</param>
+            <param name="cf">The ConnectionFactory to use</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when T doesn't support the right constructor signature.</exception>
+            <returns>a Collection of type T objects, one per record returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject(System.String,Blackfin.DataAccess.IConnectionFactory,System.Type)">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr)".
+            </remarks>
+            <example>
+            a call to ExecuteObject:
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				someSql,
+            				new ConnectionFactory(),
+            				typeof(Thing)) as Thing;
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr)</code>
+            </example>
+            <param name="sql">a SELECT statement that will return 1 object</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="objType">the type of object to create</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject(System.String,Blackfin.DataAccess.IConnectionFactory,System.Type,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            The object is identified by the objType parameter.  
+            This overload takes a variable number of objects to pass into the target constructor, along with the SqlDataReader
+            describing the data.  The target Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])"
+            </remarks>
+            <example>
+            A call to ExecuteObject: 
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				someSql, 
+            				new ConnectionFactory(),
+            				typeof(Thing),
+            				"hello world",
+            				42) as Thing;
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>
+            	public Thing(SqlDataReader dr, string message, int value)
+            </code>
+            The order of arguments is important.  
+            </example>
+            <param name="sql">a SELECT statement that will return 1 object</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="objType">the type of object to create</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Type)">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the objType parameter.  This Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr)".
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  <note type="caution">It is the 
+            responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            If the SqlCommand comes with a SqlConnection, that Connection will remain in the same state as it was found --
+            if the Connection is open, it will remain open, and if it starts off closed, it will be closed.
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the 
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            a call to ExecuteObject:
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				aCommand,
+            				new ConnectionFactory(),
+            				typeof(Thing)) as Thing;
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>public Thing(SqlDataReader dr)</code>
+            </example>
+            <param name="cmd">a SqlCommand to execute.  This command will <b>not</b> be disposed of by this assembly.</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="objType">the type of object to create</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">Thrown when objType doesn't support the right constructor signature.</exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Type,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the objType parameter.  
+            This overload takes a variable number of objects to pass into the target constructor, along with the SqlDataReader
+            describing the data.  The target Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])"
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  <note type="caution">It is the 
+            responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the 
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            A call to ExecuteObject: 
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				aCommand, 
+            				new ConnectionFactory(),
+            				typeof(Thing),
+            				"hello world",
+            				42) as Thing;
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>
+            	public Thing(SqlDataReader dr, string message, int value)
+            </code>
+            The order of arguments is important.  
+            </example>
+            <param name="cmd">a SqlCommand to execute.  This command will <b>not</b> be disposed of by this assembly.</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="objType">the type of object to create</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject``1(System.String,Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <param name="sql">a SELECT statement that will return 1 object</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of T, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject``1(System.String,Blackfin.DataAccess.IConnectionFactory,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            <para>
+            This overload takes a variable number of objects to pass into the target constructor, along with the SqlDataReader
+            describing the data.  The target Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])"
+            </para>
+            </remarks>
+            <param name="sql">SELECT statement to be executed.</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject``1(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the generic "T" parameter.  
+            The target Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr)"
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  <note type="caution">It is the 
+            responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the 
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            A call to ExecuteObject: 
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				aCommand, 
+            				new ConnectionFactory());
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>
+            	public Thing(SqlDataReader dr)
+            </code>
+            </example>
+            <param name="cmd">a SqlCommand to execute.  This command will <b>not</b> be disposed of by this assembly.</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteObject``1(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Object[])">
+            <summary>
+            Execute a SQL statement that returns 1 or 0 objects.
+            </summary>
+            <remarks>
+            <para>
+            The object is identified by the generic "T" parameter.  
+            This overload takes a variable number of objects to pass into the target constructor, along with the SqlDataReader
+            describing the data.  The target Type must have a constructor with the signature
+            "public MyType(SqlDataReader dr, [types in constructorArgs])"
+            </para>
+            <para>
+            If the SqlCommand given does not have a SqlConnection object, then a SqlConnection object will
+            be created (and disposed of).
+            </para>
+            <para>
+            If the SqlCommand given comes with a SqlConnection object, that connection will be used and, since
+            it was created outside of the scope of this assembly, will <b>not</b> be disposed of.  <note type="caution">It is the 
+            responsibility of the caller to make sure that this Connection is safely disposed!</note>
+            </para>
+            <para>
+            The SqlCommand given will <b>not</b> be disposed of by this assembly, as it was created and managed by the 
+            external caller.
+            </para>
+            </remarks>
+            <example>
+            A call to ExecuteObject: 
+            <code>
+            Thing t = DataReaderContainer.ExecuteObject(
+            				aCommand, 
+            				new ConnectionFactory(),
+            				typeof(Thing),
+            				"hello world",
+            				42);
+            </code>
+            Will expect Thing to have a constructor with signature:
+            <code>
+            	public Thing(SqlDataReader dr, string message, int value)
+            </code>
+            The order of arguments is important.  
+            </example>
+            <param name="cmd">a SqlCommand to execute.  This command will <b>not</b> be disposed of by this assembly.</param>
+            <param name="cf">the ConnectionFactory to use</param>
+            <param name="constructorArgs">Additional objects to pass to the constructor</param>
+            <exception cref="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            Thrown if the objType doesn't have the Constructor described by SqlDataReader and constructorArgs.
+            </exception>
+            <returns>an instance of objType, or null if no records were returned</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteScalarCollection``1(System.String,Blackfin.DataAccess.IConnectionFactory,System.Int32,System.Boolean,``0)">
+            <summary>
+            Executes a SQL statement that returns a set of scalar values.
+            </summary>
+            <remarks>
+            <para>
+            Instead of returning sets of rows as objects (as ExecuteCollection() does), this returns the set
+            of one particular field identified by columnPosition.  The type indicated by T must correspond to the
+            type of values returned by the row at columnPosition.
+            </para>
+            <para>
+            If nullsOk is true, null fields will be represented by the value nullValue.  Otherwise, null fields
+            will result in an exception.
+            </para>
+            </remarks>
+            <typeparam name="T">The type of object returned by the field at columnPosition.</typeparam>
+            <param name="sql">The SELECT statement to run.</param>
+            <param name="cf">The ConnectionFactory to use.</param>
+            <param name="columnPosition">The column position that will be returned.</param>
+            <param name="nullsOk">
+            If set to <c>true</c>, DBNull will be replaced with nullValue.  
+            If set to <c>false</c>, DBNull will result in an exception.</param>
+            <param name="nullValue">The value to use if a null value is encountered.  Has no effect if nullsOk is <c>false</c>.</param>
+            <returns>A Collection of type T objects, one per record returned.</returns>
+            <exception cref="T:System.Data.NoNullAllowedException">Thrown if a null field is encountered, but nullsOk is <c>false</c>.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ExecuteScalarCollection``1(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Int32,System.Boolean,``0)">
+            <summary>
+            Executes a SQL statement that returns a set of scalar values.
+            </summary>
+            <remarks>
+            <para>
+            Instead of returning sets of rows as objects (as ExecuteCollection() does), this returns the set
+            of one particular field identified by columnPosition.  The type indicated by T must correspond to the
+            type of values returned by the row at columnPosition.
+            </para>
+            <para>
+            If nullsOk is true, null fields will be represented by the value nullValue.  Otherwise, null fields
+            will result in an exception.
+            </para>
+            </remarks>
+            <typeparam name="T">The type of object returned by the field at columnPosition.</typeparam>
+            <param name="cmd">The DataReader-returning Command to execute.</param>
+            <param name="cf">The ConnectionFactory to use.</param>
+            <param name="columnPosition">The column position that will be returned.</param>
+            <param name="nullsOk">
+            If set to <c>true</c>, DBNull will be replaced with nullValue.  
+            If set to <c>false</c>, DBNull will result in an exception.</param>
+            <param name="nullValue">The value to use if a null value is encountered.  Has no effect if nullsOk is <c>false</c>.</param>
+            <returns>A Collection of type T objects, one per record returned.</returns>
+            <exception cref="T:System.Data.NoNullAllowedException">Thrown if a null field is encountered, but nullsOk is <c>false</c>.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.GetFirstArgument(Blackfin.DataAccess.DataReaderContainer.ConstructorInfoDescription,System.Data.IDataReader)">
+            <summary>
+            Convert the NullableSqlDataReader into the type expected by the ConstructorInfo.
+            </summary>
+            <remarks>
+            This converts NullableSqlDataReader into SqlDataReader, for supporting older 
+            implementations using BDAC - and because SqlDataReader is sealed, so theres no simple way
+            to convert a NullableSqlDataReader into a SqlDataReader directly.</remarks>
+            <param name="cid">What parameters does the constructor expect?</param>
+            <param name="dr">DataReader we're going to alter</param>
+            <returns>a DataReader that the Constructor expects.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Execute(System.Data.IDbCommand,Blackfin.DataAccess.IConnectionFactory,System.Type,System.Boolean,System.Object[])">
+            <summary>
+            Executes the given SqlCommand safely, populating an ArrayList with the results.
+            </summary>
+            <param name="cmd">SqlCommand to execute</param>
+            <param name="cf">ConnectionFactory providing the data access</param>
+            <param name="objType">Type of object to create</param>
+            <param name="constructorArgs">optional constructor arguments</param>
+            <param name="returnOne">If True, returns only the first record found.</param>
+            <returns>An ArrayList containing 0, 1, or many objects of type objType.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.BuildConstructorString(System.Type[])">
+            <summary>
+            Create a string that describes the expected constructor arguments for this object.
+            </summary>
+            <remarks>For use when creating a meaningful <see cref="T:Blackfin.DataAccess.ConstructorNotFoundException"/></remarks>
+            <param name="args">Types required in the Constructor</param>
+            <returns>(type1, type2, type3 ...)</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.BuildTypes(System.Type,System.Object[])">
+            <summary>
+            Create an array of Types that describes the Constructor for ExecuteObject and ExecuteCollection.
+            </summary>
+            <param name="firstType">The first type required in the constructor.</param>
+            <param name="constructorArgs">Array of types, not including the required firstType.  Can be null.</param>
+            <returns>
+            Array of Types, with [0] = NullableSqlDataReader, SqlDataReader or IDataReader, 
+            and [1...n] = the types of the constructorArgs members.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.BuildArguments(System.Data.IDataReader,System.Object[])">
+            <summary>
+            Create an array of objects to pass in as arguments to the target constructor
+            </summary>
+            <param name="dr">The required DataReader</param>
+            <param name="constructorArgs">objects to pass in, not including SqlDataReader.  Can be null.</param>
+            <returns>an array of objects, containing a SqlDataReader plus the optional values provided by constructorArgs</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Dispose">
+            <summary>
+            Safely dispose of this DataReaderContainer.  Follows the IDisposable pattern.
+            </summary>
+            <see href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconimplementingdisposemethod.asp">
+            Implementing A Dispose Method
+            </see>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Dispose(System.Boolean)">
+            <summary>
+            Safely dispose of this DataReaderContainer.  Follows the IDisposable pattern.
+            </summary>
+            <see href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconimplementingdisposemethod.asp">
+            Implementing A Dispose Method
+            </see>
+            <param name="disposing">
+            If True, this method was called from within our assembly and with live objects.
+            If False, this method was called from the Finalizer.
+            </param>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.Finalize">
+            <summary>
+            Finalizer for DataReaderContainer.  Calls Dispose.
+            </summary>
+        </member>
+        <member name="T:Blackfin.DataAccess.DataReaderContainer.ConstructorInfoDescription">
+            <summary>
+            Describes the ConstructorInfo returned by BuildConstructor.
+            </summary>
+        </member>
+        <member name="T:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager">
+            <summary>
+            This class handles keeping track of some bookkeeping details for SqlConnections - 
+            if we created the Connection ourselves, when we need to close or destroy it,
+            or if its a connection that someone on the "outside" provided that we want to 
+            keep intact for someone else to make use of.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager.InitializeCommand(System.Data.IDbCommand)">
+            <summary>
+            Initializes the command.  If the command does not have a Connection reference,
+            one will be created and given to it.
+            </summary>
+            <param name="cmd">
+            The command to modify.  
+            The cmd can be modified as a side-effect of calling InitializeCommand.
+            </param>
+        </member>
+        <member name="F:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager.alreadyDisposed">
+            <summary>
+             Has this object already been disposed?  (don't need to dispose twice)
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager.Dispose">
+            <summary>
+            Safely dispose of this object.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager.Finalize">
+            <summary>
+            Releases unmanaged resources and performs other cleanup operations before the
+            <see cref="T:Blackfin.Util.DataReaderContainer.ConnectionStateManager"/> is reclaimed by garbage collection.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.DataReaderContainer.ConnectionStateManager.Dispose(System.Boolean)">
+            <summary>
+            Safely disposes of this object.
+            </summary>
+            <param name="isDisposing">
+            If set to <c>true</c>, object is being disposed by Dispose pattern, else object is being disposed
+            by finalizer thread.
+            </param>
+        </member>
+        <member name="T:Blackfin.DataAccess.ConstructorNotFoundException">
+            <summary>
+            ConstructorNotFoundException is thrown when the DataReaderContainer attempts to use reflection
+            to find a specific constructor signature on a type, but this signature doesn't exist.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConstructorNotFoundException.#ctor">
+            <summary>
+            Create a ConstructorNotFoundException.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConstructorNotFoundException.#ctor(System.String)">
+            <summary>
+            Create a ConstructorNotFoundException.
+            </summary>
+            <param name="msg">A Message describing the details of the Exception.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConstructorNotFoundException.#ctor(System.String,System.Exception)">
+            <summary>
+            Create a ConstructorNotFoundException.
+            </summary>
+            <param name="msg">a Message describing the details of the exception.</param>
+            <param name="inner">Inner Exception</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ConstructorNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Create a ConstructorNotFoundException.
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="T:Blackfin.DataAccess.Executor">
+            <summary>
+            Execute Various types of SQL Statements.
+            </summary>
+            <remarks>
+            NOTE:  If a SqlConnection is used to retrieve a SqlDataReader object,
+            	   those two objects are tied together: the DataReader must be closed before
+            	   anything else can be done with the SqlConnection object.
+            </remarks>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.#ctor(Blackfin.DataAccess.IConnectionFactory)">
+            <summary>
+            Create an instance of an Executor.
+            </summary>
+            <param name="cf">The connection factory to get connections from.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnDataReader(System.String)">
+            <summary>
+            Execute a SQL Statement and store the results in the SqlDataReader result.
+            The connection and the DataReader are linked.
+            </summary>
+            <remarks>
+            The ExecutorResult returns a live SqlConnection and SqlDataReader, and <b>Must</b>
+            be disposed of properly.
+            </remarks>
+            <example>
+            	<code>
+            	Executor exec = new Executor();
+            	String sql = "select * from SomeTable";
+            	using (ExecutorResult result = exec.RunSqlReturnDataReader(sql)) {
+            		while (dr.Read()) {
+            			// use DataReader
+            		}
+            	}
+            	</code>
+            </example>
+            <param name="sql">A SQL statement that returns a set.</param>
+            <returns>An ExecutorResult containing a live SqlConnection and SqlDataReader.  
+            		 This ExecutorResult must be disposed of properly!
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnExists(System.String)">
+            <summary>
+            Execute a SQL statement and determine if it returns rows or not.
+            </summary>
+            <param name="sql">a SELECT SQL to be executed</param>
+            <returns>True if the SELECT statement returned rows, false otherwise</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSql(System.String)">
+            <summary>
+            Execute a simple SQL Statement, with no returning value.  i.e. an Update statement.
+            </summary>
+            <param name="sql">The statement to execute.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunTransactionMember(System.String,System.Data.SqlClient.SqlTransaction)">
+            <summary>
+            Executes a non-query-returning member of a transaction, leaving the connection state to be handled
+            by the outside caller.
+            </summary>
+            <remarks>This remains a SqlServer specific entity</remarks>
+            <param name="sql"></param>
+            <param name="trans"></param>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSql(System.Text.StringBuilder)">
+            <summary>
+            Execute a simple SQL Statement, with no returning value.
+            </summary>
+            <param name="sql">A StringBuilder representing a SQL statement to execute.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnId(System.String)">
+            <summary>
+            Run a SQL Statement that returns an Identifier (@@IDENTITY).
+            </summary>
+            <param name="sql">The SQL Statement to Execute</param>
+            <returns>The value of @@IDENTITY generated after executing sql.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnId(System.Data.IDbCommand)">
+            <summary>
+            Run a SQL statement that returns an identifier (@@IDENTITY)	
+            </summary>
+            <param name="cmd">A Command containing the SQL to execute</param>
+            <returns>the value of @@IDENTIY after executing the command.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnId(System.Data.IDbCommand,System.Boolean)">
+            <summary>
+            Run a SQL statement that returns an identifier (@@IDENTITY)	
+            </summary>
+            <param name="cmd">A Command containing the SQL to execute</param>
+            <param name="maintainConnectionState">If <c>true</c>, the connection state of cmd will be maintained (open, close, in transaction, etc.)</param>
+            <returns>the value of @@IDENTIY after executing the command.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunSqlReturnRows(System.Data.IDbCommand)">
+            <summary>
+            Run a Command via .ExecuteNonQuery() and return the # of rows reported as affected.
+            </summary>
+            <param name="cmd">a valid SqlCommand</param>
+            <returns>the number of rows as reported by the SqlCommand</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunCommand(System.Data.IDbCommand)">
+            <summary>
+            Execute a SqlCommand and return the number of rows affected.
+            </summary>
+            <param name="cmd">SqlCommand to execute</param>
+            <returns>number of rows affected</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.Executor.RunCommandReturnDR(System.Data.IDbCommand)">
+            <summary>
+            Execute a Command and return a DataReader stream of data.
+            </summary>
+            <remarks>
+            When the DataReader is closed, the Command's connection will also be closed.
+            </remarks>
+            <param name="cmd">Command to execute</param>
+            <returns>DataReader of cmd's data</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.Executor.Connection">
+            <summary>
+            Retrieve an reference to a Connection from the connection factory.
+            </summary>
+        </member>
+        <member name="T:Blackfin.DataAccess.ExecutorResult">
+            <summary>
+            Contains references to result values from Executor.
+            Generally used to pass references between Executor and DataReaderContainer,
+            and not generally used beyond that.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ExecutorResult.#ctor(System.Data.IDbConnection,System.Data.IDataReader)">
+            <summary>
+            Create a result container for this Connection and DataReader.
+            </summary>
+            <param name="connection">An active connection</param>
+            <param name="dr">An active DataReader</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.ExecutorResult.Finalize">
+            <summary>
+            Destroy this ExecutorResult.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ExecutorResult.Dispose">
+            <summary>
+            Dispose of this object safely.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.ExecutorResult.Dispose(System.Boolean)">
+            <summary>
+            Safely dispose of this ExecutorResult.  Follows the IDisposable pattern.
+            </summary>
+            <see href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/cpguide/html/cpconimplementingdisposemethod.asp">
+            Implementing A Dispose Method
+            </see>
+            <param name="isDisposing">
+            If True, this method was called from within our assembly and with live objects.
+            If False, this method was called from the Finalizer.
+            </param>
+        </member>
+        <member name="P:Blackfin.DataAccess.ExecutorResult.Connection">
+            <summary>
+            Retrieve the associated Connection object.
+            </summary>
+        </member>
+        <member name="P:Blackfin.DataAccess.ExecutorResult.DataReader">
+            <summary>
+            Retrieve the associated DataReader.
+            </summary>
+        </member>
+        <member name="T:Blackfin.DataAccess.IConnectionFactory">
+            <summary>
+            An implementation of this interface describes how a class can generate SqlConnection objects. 
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.IConnectionFactory.CreateCommand(System.String)">
+            <summary>
+            Creates a command.
+            </summary>
+            <param name="sql">The SQL statement the command will use.</param>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.IConnectionFactory.CreateCommand(System.String,System.Data.IDbConnection)">
+            <summary>
+            Creates a command.
+            </summary>
+            <param name="sql">The SQL statement the command will use.</param>
+            <param name="connection">The connection the command will use.</param>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.IConnectionFactory.CreateCommand">
+            <summary>
+            Creates a Command.
+            </summary>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.IConnectionFactory.CreateDataReader(System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Creates a DataReader.
+            </summary>
+            <example>
+            Typical Implementation: (SqlServer specific)
+            <code>
+            IDataReader CreateDataReader(IDbCommand command, CommandBehavior behavior) {
+                return new NullableSqlDataReader(command.ExecuteReader(behavior)));
+            }
+            </code>
+            </example>
+            <param name="command">The command to execute.</param>
+            <param name="behavior">The behavior for the command - what happens when the reader closes.</param>
+            <returns>Live DataReader</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.IConnectionFactory.CreateConnection">
+            <summary>
+            Create and returns a Connection.
+            </summary>
+            <returns>a SqlConnection with the ConnectionString that is appropriate for this application and it's environment.</returns>
+        </member>
+        <member name="T:Blackfin.DataAccess.NullableSqlDataReader">
+            <summary>
+            Provides a way of reading a forward-only stream of rows from a SQL Server database, 
+            with support for Nullable types.
+            </summary>
+            <remarks>This is the SqlSever speciifc version of <see cref="T:Blackfin.DataAccess.NullableDataReader"/></remarks>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.#ctor(System.Data.SqlClient.SqlDataReader)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Blackfin.Util.NullableSqlDataReader"/> class.
+            </summary>
+            <param name="dr">The inner SqlDataReader to draw data from.</param>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetEnumerator">
+            <summary>
+            Returns an System.Collections.IEnumerator that iterates through the System.Data.SqlClient.SqlDataReader.
+            </summary>
+            <returns>An System.Collections.IEnumerator</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetProviderSpecificFieldType(System.Int32)">
+            <summary>
+            Gets an Object that is a representation of the underlying provider-specific field type.
+            </summary>
+            <param name="i">The field to return.</param>
+            <returns> Gets an System.Object that is a representation of the underlying provider-specific field type.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetProviderSpecificValue(System.Int32)">
+            <summary>
+             Gets an Object that is a representation of the underlying provider specific value.
+            </summary>
+            <param name="i">The field to return.</param>
+            <returns>
+            An System.Object that is a representation of the underlying provider specific value.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetProviderSpecificValues(System.Object[])">
+            <summary>
+             Gets an array of objects that are a representation of the underlying provider
+                specific values.
+            </summary>
+            <param name="values"> An array of System.Object.</param>
+            <returns>The array of objects that are a representation of the underlying provider specific values.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlBinary(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlBinary.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>A System.Data.SqlTypes.SqlBinary.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlBoolean(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlBoolean.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlByte(System.Int32)">
+            <summary>
+             Gets the value of the specified column as a System.Data.SqlTypes.SqlByte.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlBytes(System.Int32)">
+            <summary>
+             Gets the value of the specified column as System.Data.SqlTypes.SqlBytes.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlChars(System.Int32)">
+            <summary>
+             Gets the value of the specified column as System.Data.SqlTypes.SqlChars.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlDateTime(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlDateTime.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlDecimal(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlDecimal.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlDouble(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlDouble.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlGuid(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlGuid.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlInt16(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlInt16.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlInt32(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlInt32.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlInt64(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlInt64.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlMoney(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlMoney.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlSingle(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlSingle.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlString(System.Int32)">
+            <summary>
+            Gets the value of the specified column as a System.Data.SqlTypes.SqlString.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlValue(System.Int32)">
+            <summary>
+            Gets an System.Object that is a representation of the underlying System.Data.SqlDbType Variant.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns>The value of the column.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlValues(System.Object[])">
+            <summary>
+            Gets all the attribute columns in the current row.
+            </summary>
+            <param name="values"> An array of System.Object to copy the attribute columns into.</param>
+            <returns>The number of instances of System.Object in the array.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.GetSqlXml(System.Int32)">
+            <summary>
+            Gets the value of the specified column as an XML value.
+            </summary>
+            <param name="i">The zero-based column ordinal.</param>
+            <returns> A System.Data.SqlTypes.SqlXml value that contains the XML stored within the corresponding field.</returns>
+            <exception cref="T:System.ArgumentOutOfRangeException"> The index passed was outside the range of 0 to System.Data.DataTableReader.FieldCount-1</exception>
+            <exception cref="T:System.InvalidCastException">The retrieved data is not compatible with the System.Data.SqlTypes.SqlXml type.</exception>
+            <exception cref="T:System.InvalidOperationException">An attempt was made to read or access columns in a closed DataReader.</exception>
+        </member>
+        <member name="F:Blackfin.DataAccess.NullableSqlDataReader.alreadyDisposed">
+            <summary>
+             Has this object already been disposed?  (don't need to dispose twice)
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.NullableSqlDataReader.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources
+            </summary>
+            <param name="isDisposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableSqlDataReader.InnerDataReader">
+            <summary>
+            This exposes access to the inner SqlDatareader contained by NullableSqlDataReader.
+            This should only be used as a last resort, and never outside of this assembly.
+            </summary>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableSqlDataReader.HasRows">
+            <summary>
+            Gets a value indicating whether this instance has rows.
+            </summary>
+            <value><c>true</c> if this instance has rows; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:Blackfin.DataAccess.NullableSqlDataReader.VisibleFieldCount">
+            <summary>
+            Gets the number of fields in the System.Data.SqlClient.SqlDataReader that are not hidden.
+            </summary>
+            <value>The number of fields that are not hidden.</value>
+        </member>
+        <member name="T:Blackfin.DataAccess.SqlArgument">
+            <summary>
+            Summary description for SqlArgument.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.FormatArg(System.String,System.Boolean,System.String)">
+            <summary>
+            Format the argument for use in a SQL Command.
+            </summary>
+            <param name="value">Argument to check</param>
+            <param name="canBeNull">Is "Null" a valid answer?</param>
+            <param name="delimiter">what to wrap the string in</param>
+            <returns>The formatted String</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.FormatArg(System.String)">
+            <summary>
+            Format the argument for use in a SQL Command.  Defaults to not-Null.
+            </summary>
+            <param name="value">Argument to check</param>
+            <returns>The Formatted String.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.FormatArg(System.String,System.Boolean)">
+            <summary>
+            Format the argument for use in a SQL Command.
+            </summary>
+            <param name="value">Argument to check</param>
+            <param name="canBeNull">Is "Null" a valid answer?</param>
+            <returns>The formatted String</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.SafeApostrophe(System.String)">
+            <summary>
+            Replace all "'"s with "''" to make SQL strings happy.
+            </summary>
+            <param name="value">The string to check for "'"s</param>
+            <returns>the same string with "'" replaced with "''"</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.BuildInClauseList(System.String[])">
+            <summary>
+            Turn an array of strings into a string ready to be dropped into an IN clause:
+            Example:
+            	x[0] = "a"; 
+            	x[1] = "b";
+            	x[2] = "c";
+            	string result = buildInClauseList(x);
+                
+                result is now: "('a', 'b', 'c')"
+                
+                If args.length == 0, returns a zero-length string.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlArgument.BuildInClauseList(System.Int32[])">
+            <summary>
+            Turn an array of ints into a string ready to be dropped into an IN clause:
+            Example:
+            	x[0] = 1;
+            	x[1] = 2;
+            	x[2] = 3;
+            	string result = buildInClauseList(x);
+                
+                result is now: "(1, 2, 3)"
+                
+                If args.length == 0, returns a zero-length string.
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Blackfin.DataAccess.SqlConnectionFactory">
+            <summary>
+            The standard IConnectionFactory implementation for SqlServer.
+            Creates <see cref="T:System.Data.SqlClient.SqlConnection"/> objects on demand, using ConnectionString information 
+            contained in the ConfigurationManager.
+            </summary>
+            <remarks>
+            By default, the connection string named "BDAC" is used, however the ConnectionStringName property can
+            be overrridden to use the connection string name of your choice. 
+            </remarks>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.CreateConnection">
+            <summary>
+            Create and returns a Connection.
+            </summary>
+            <returns>
+            a SqlConnection with the ConnectionString that is appropriate for this application and it's environment.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.CreateCommand(System.String)">
+            <summary>
+            Creates a command.
+            </summary>
+            <param name="sql">The SQL statement the command will use.</param>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.CreateCommand(System.String,System.Data.IDbConnection)">
+            <summary>
+            Creates a command.
+            </summary>
+            <param name="sql">The SQL statement the command will use.</param>
+            <param name="connection">The connection the command will use.</param>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.CreateCommand">
+            <summary>
+            Creates a Command.
+            </summary>
+            <returns>a Command</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.CreateDataReader(System.Data.IDbCommand,System.Data.CommandBehavior)">
+            <summary>
+            Creates a DataReader.
+            </summary>
+            <example>
+            Typical Implementation: (SqlServer specific)
+            <code>
+            IDataReader CreateDataReader(IDbCommand command, CommandBehavior behavior) {
+                return new NullableSqlDataReader(command.ExecuteReader(behavior)));
+            }
+            </code>
+            </example>
+            <param name="command">The command to execute.</param>
+            <param name="behavior">The behavior for the command - what happens when the reader closes.</param>
+            <returns>Live DataReader</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlConnectionFactory.Blackfin#DataAccess#IConnectionFactory#CreateConnection">
+            <summary>
+            Create and returns a Connection.
+            </summary>
+            <returns>a SqlConnection with the ConnectionString that is appropriate for this application and it's environment.</returns>
+        </member>
+        <member name="P:Blackfin.DataAccess.SqlConnectionFactory.Instance">
+            <summary>
+            Gets the instance.  
+            </summary>
+            <remarks>This is left in for legacy implementations of BDAC - the Singleton pattern has been
+            Deemed Harmful; instead of using an explicit singleton you should be using an Inversion of Control
+            container of some sort (Spring, Castle, StructureMap, etc) which will manage the instances of this object.
+            </remarks>
+            <value>The instance.</value>
+        </member>
+        <member name="P:Blackfin.DataAccess.SqlConnectionFactory.ConnectionStringName">
+            <summary>
+            Gets the name of the connection string to use, from the ConnectionStrings configuration.
+            </summary>
+            <remarks>
+            See the ConnectionStrings section in the Application Config file.
+            Implementations should override this to use their own connection string names, if they wish.
+            </remarks>
+            <value>The name of the connection string.</value>
+        </member>
+        <member name="T:Blackfin.DataAccess.SqlTypeConversion">
+            <summary>
+            Standard routines for converting between standard .NET types and SqlTypes.
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.Format(System.Data.SqlTypes.SqlString)">
+            <summary>
+            Format a given SqlString into a Form-Ready string.  Converts DBNull to String.empty.
+            </summary>
+            <param name="value">SqlString to Convert</param>
+            <returns>value.ToString() or ""</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.Format(System.Data.SqlTypes.SqlInt32)">
+            <summary>
+            Format a given SqlInt32 into a Form-Ready string.  Converts DBNull to String.empty;
+            </summary>
+            <param name="value">SqlInt32 to Convert</param>
+            <returns>value.ToString() or ""</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.Format(System.Data.SqlTypes.SqlMoney)">
+            <summary>
+            Format a given SqlMoney into a Form-Ready string.  Converts DBNull to String.empty,
+            otherwise uses region-specific currency format.
+            </summary>
+            <param name="value">SqlMoney to Convert</param>
+            <returns>value.Value.ToString("c") or ""</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.DisplayString(System.Data.SqlTypes.SqlString)">
+            <summary>
+            Format a given SqlString for use in an HTML Table.  
+            Converts DBNull or [whitespace] to "nbsp", otherwise returns the value.
+            </summary>
+            <param name="value">the value to convert</param>
+            <returns>either nbsp or the value</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.FormatDate(System.Data.SqlTypes.SqlDateTime)">
+            <summary>
+            Format a given SqlDateTime value into a Calendar-Popup ready DateTime.  If value == null,
+            returns DateTime.MinValue because thats the expected "Null" value for the popup calendar.
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.ConvertStringToSqlString(System.String)">
+            <summary>
+            Given a string, return a SqlString.  If s is null or string.empty, returns SqlString.Null.
+            </summary>
+            <param name="value">string to convert</param>
+            <returns>If value == null || value.Length == 0, return SqlString null.  else return SqlString(value)</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.ConvertStringsWithNull(System.String)">
+            <summary>
+            Converts string.empty into null.
+            Given a string, returns either itself or null.
+            </summary>
+            <remarks>This is not needed anymore because of new routines built into .NET 2.0 strings.</remarks>
+            <param name="value">string to convert</param>
+            <returns>the same string, or null if s.Length == 0</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.ConvertSqlStringToString(System.Data.SqlTypes.SqlString)">
+            <summary>
+            Given a SqlString, return the String value.  If SqlString IsNull, returns null.
+            </summary>
+            <param name="value">sqlstring to convert</param>
+            <returns>value.ToString() or null</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.MaxLength(System.Data.SqlTypes.SqlString,System.Int32)">
+            <summary>
+            Truncates a SqlString to maxLength, if necessary.
+            </summary>
+            <param name="value"></param>
+            <param name="maxLengthDesired"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.MaxLength(System.String,System.Int32)">
+            <summary>
+            Truncates a string to maxLength, if necessary.
+            </summary>
+            <param name="value"></param>
+            <param name="maxLengthDesired"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.MaxLengthString(System.String,System.Int32)">
+            <summary>
+            Truncates a string to maxLength, if necessary.
+            </summary>
+            <param name="value"></param>
+            <param name="maxLengthDesired"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetNumbers(System.String)">
+            <summary>
+            Return only the integers from the string given.
+            </summary>
+            <param name="value">The value to turn into numbers.</param>
+            <returns>only the numbers [^0-9] from the string, or null if value is null.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetNumbers(System.Data.SqlTypes.SqlString)">
+            <summary>
+            Return only the integers from the SqlString given.  If s.IsNull, returns SqlString.Null.
+            </summary>
+            <param name="value">the value to turn into numbers</param>
+            <returns>only the numbers [^0-9] from the value, or SqlString.Null if the value is null.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetDate(System.String,System.String)">
+            <summary>
+            Given a date and time string, try to put them together into a DateTime object.
+            </summary>
+            <param name="date"></param>
+            <param name="time"></param>
+            <returns>a DateTime object reflecting the string date and time arguments</returns>
+            <exception cref="T:System.FormatException">If date/time can't be parsed into a meaningful object.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetDate(System.DateTime,System.Int32,System.Int32)">
+            <summary>
+            Given a Date and an hour and minute, return a SqlDateTime object.
+            </summary>
+            <param name="date">The date to base the result off of</param>
+            <param name="hour">The hour to set the result to</param>
+            <param name="minute">The minute to set the result to</param>
+            <returns>
+            	DBNull if date == DateTime.MinValue.
+            	Otherwise, a SqlDateTime object set to the month/day/year given by 'date',
+            	and the hour/minute given by the hour and minute parameters.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetDate(System.DateTime)">
+            <summary>
+            Given a Date, return a SqlDateTime object.
+            </summary>
+            <param name="date">The date to base the result off of</param>
+            <returns>
+            	DBNull if date == DateTime.MinValue, otherwise returns the given date.
+            </returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.GetDate(System.String)">
+            <summary>
+            Given a date string, try to form a SqlDateTime object.
+            </summary>
+            <param name="date">The string to attempt parsing</param>
+            <returns>a DateTime object reflecting the string date argument</returns>
+            <exception cref="T:System.FormatException">Thrown when the string can't be parsed into a meaningful Date object.</exception>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.ConvertSqlDecimal(System.Data.SqlTypes.SqlDecimal)">
+            <summary>
+            Determine if this SqlDecimal value is null.  If it is return DBNull.Value, else
+            return the SqlDecimal object itself.  To get around a problem with SqlDecimals not being interpreted correctly 
+            when they're null.
+            </summary>
+            <param name="value">The SqlDecimal to examine.</param>
+            <returns>DBNull if value is null, else returns the value itself.</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.SqlTypeConversion.ConvertDateTime(System.DateTime)">
+            <summary>
+            If value == DateTime.MinValue then returns SqlDateTime.Null.  Else returns value.
+            </summary>
+            <param name="value">The DateTime to examine.</param>
+            <returns>
+            	DBNull if value == DateTime.MinValue,
+            	else returns the value itself.
+            </returns>
+        </member>
+        <member name="T:Blackfin.DataAccess.TypeCheck">
+            <summary>
+            Routines to do simple type verification (that should have been built into the framework to start with, but wasn't).
+            </summary>
+        </member>
+        <member name="M:Blackfin.DataAccess.TypeCheck.IsInteger(System.String)">
+            <summary>
+            Determine if 's' can be represented as an Integer.
+            </summary>
+            <remarks>
+            Checks 's' against <see cref="F:System.Globalization.NumberStyles.Integer"/> and 
+            <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo"/> to determine validity.
+            </remarks>
+            <param name="value">The string to try parsing</param>
+            <returns>True if value can be parsed as an integer successfully</returns>
+        </member>
+        <member name="M:Blackfin.DataAccess.TypeCheck.IsInteger(System.String,System.Int32@)">
+            <summary>
+            Determine if 'value' can be represented as an Integer.
+            </summary>
+            <remarks>
+            Checks 's' against <see cref="F:System.Globalization.NumberStyles.Integer"/> and 
+            <see cref="P:System.Globalization.NumberFormatInfo.InvariantInfo"/> to determine validity.
+            If 's' can be parsed, the resulting integer value is placed in 'result'.
+            </remarks>
+            <param name="value">The string to try parsing</param>
+            <param name="result">
+            If value was parsed successfully, result contains the integer representation, otherwise result is set to 0.
+            </param>
+            <returns>True if value can be parsed as an integer successfully.</returns>
+        </member>
+    </members>
+</doc>

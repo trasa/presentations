@@ -1,0 +1,353 @@
+Microsoft (R) Build Engine Version 3.5.21022.8
+[Microsoft .NET Framework, Version 2.0.50727.1433]
+Copyright (C) Microsoft Corporation 2007. All rights reserved.
+
+Using solution cache file "WhichCSharpCompilerAreYou.sln.cache" for configuration "Debug|Any CPU" and tools version "3.5".
+Build started 3/23/2008 4:00:12 PM.
+Project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln" on node 0 (default targets).
+Building with tools version "3.5".
+Target "ValidateSolutionConfiguration" in file "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln.cache" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln":
+Task "Error" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) was evaluated as (('<SolutionConfiguration xmlns=""><ProjectConfiguration Project="{C53BE6BB-CD20-4A45-8287-9AEF7C93950E}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>' == '') and ('' != 'true')).
+Task "Warning" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) was evaluated as (('<SolutionConfiguration xmlns=""><ProjectConfiguration Project="{C53BE6BB-CD20-4A45-8287-9AEF7C93950E}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>' == '') and ('' == 'true')).
+Using "Message" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Message"
+  Building solution configuration "Debug|Any CPU".
+Done executing task "Message".
+Done building target "ValidateSolutionConfiguration" in project "WhichCSharpCompilerAreYou.sln".
+Target "ValidateToolsVersions" in file "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln.cache" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln":
+Task "Error" skipped, due to false condition; ('$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')) was evaluated as ('3.5' == '2.0' and ('' != '2.0' and '' != '')).
+Done building target "ValidateToolsVersions" in project "WhichCSharpCompilerAreYou.sln".
+Target "Build" in file "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln.cache" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln":
+Using "MSBuild" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MSBuild"
+  Global Properties:
+    Configuration=Debug
+    Platform=AnyCPU
+    BuildingSolutionFile=true
+    CurrentSolutionConfigurationContents=<SolutionConfiguration xmlns=""><ProjectConfiguration Project="{C53BE6BB-CD20-4A45-8287-9AEF7C93950E}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>
+    SolutionDir=C:\Projects\Samples\WhichCSharpCompilerAreYou\
+    SolutionExt=.sln
+    SolutionFileName=WhichCSharpCompilerAreYou.sln
+    SolutionName=WhichCSharpCompilerAreYou
+    SolutionPath=C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln
+Project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln" (1) is building "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj" (2) on node 0 (default targets).
+Building with tools version "3.5".
+Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Task "Message"
+  Configuration=Debug
+Done executing task "Message".
+Task "Message"
+  Platform=AnyCPU
+Done executing task "Message".
+Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Task "Error" skipped, due to false condition; ('$(BaseIntermediateOutputPath)' != '' and !HasTrailingSlash('$(BaseIntermediateOutputPath)')) was evaluated as ('obj\' != '' and !HasTrailingSlash('obj\')).
+Task "Error" skipped, due to false condition; ('$(IntermediateOutputPath)' != '' and !HasTrailingSlash('$(IntermediateOutputPath)')) was evaluated as ('obj\Debug\' != '' and !HasTrailingSlash('obj\Debug\')).
+Done building target "_CheckForInvalidConfigurationAndPlatform" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "GetFrameworkPaths" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Using "GetFrameworkSdkPath" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "GetFrameworkSdkPath"
+  Found the Microsoft Windows SDK installed at "C:\Program Files\Microsoft SDKs\Windows\v6.0A\".
+Done executing task "GetFrameworkSdkPath".
+Done building target "GetFrameworkPaths" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "PrepareForBuild" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "FindAppConfigFile" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindAppConfigFile"
+Done executing task "FindAppConfigFile".
+Using "MakeDir" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "MakeDir"
+Done executing task "MakeDir".
+Done building target "PrepareForBuild" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Target "SplitProjectReferencesByType" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "SplitProjectReferencesByType" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "_SplitProjectReferencesByFileExistence" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(NonVCProjectReference)'!='') was evaluated as (''=='true' and ''!='').
+Done building target "_SplitProjectReferencesByFileExistence" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "ResolveProjectReferences" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "MSBuild" skipped, due to false condition; ('@(NonVCProjectReference)'!='' and ('$(BuildingSolutionFile)' == 'true' or '$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as (''!='' and ('true' == 'true' or '' == 'true' or 'true' != 'true') and '' != '').
+Task "MSBuild" skipped, due to false condition; ('@(NonVCProjectReference)'!='' and '$(BuildingInsideVisualStudio)' != 'true' and '$(BuildingSolutionFile)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as (''!='' and '' != 'true' and 'true' != 'true' and 'true' == 'true' and '' != '').
+Task "MSBuild" skipped, due to false condition; ('@(NonVCProjectReference)'!='' and '$(BuildingProject)'=='true' and '@(_MSBuildProjectReferenceExistent)'!='') was evaluated as (''!='' and 'true'=='true' and ''!='').
+Task "Warning" skipped, due to false condition; ('@(NonVCProjectReference)'!='' and '@(_MSBuildProjectReferenceNonexistent)'!='') was evaluated as (''!='' and ''!='').
+Done building target "ResolveProjectReferences" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "SplitProjectReferencesByType" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Target "ResolveVCProjectReferences" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(VCProjectReference)'!='') was evaluated as (''=='true' and ''!='').
+Task "ResolveVCProjectOutput" skipped, due to false condition; ('$(BuildingSolutionFile)'=='true' and '@(VCProjectReference)'!='') was evaluated as ('true'=='true' and ''!='').
+Task "Error" skipped, due to false condition; ('$(BuildingSolutionFile)'!='true' and '$(BuildingInsideVisualStudio)'!='true' and '@(VCProjectReference)'!='') was evaluated as ('true'!='true' and ''!='true' and ''!='').
+Done building target "ResolveVCProjectReferences" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "GetFrameworkPaths" skipped. Previously built successfully.
+Target "PrepareForBuild" skipped. Previously built successfully.
+Target "ResolveAssemblyReferences" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ResolveAssemblyReference"
+  Assemblies:
+      System
+      System.Data
+      System.Xml
+  AssemblyFiles:
+  CandidateAssemblyFiles:
+  TargetFrameworkDirectories:
+      C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+  InstalledAssemblyTables:
+  SearchPaths:
+      {CandidateAssemblyFiles}
+      {HintPathFromItem}
+      {TargetFrameworkDirectory}
+      {Registry:Software\Microsoft\.NetFramework,v2.0,AssemblyFoldersEx}
+      {AssemblyFolders}
+      {GAC}
+      {RawFileName}
+      bin\Debug\
+  AllowedAssemblyExtensions:
+      .exe
+      .dll
+  AllowedRelatedFileExtensions:
+      .pdb
+      .xml
+  AppConfigFile:
+      
+  AutoUnify:
+      False
+  TargetProcessorArchitecture:
+      
+  StateFile:
+      obj\Debug\ResolveAssemblyReference.cache
+  Primary reference "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+  Primary reference "System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+      Resolved file path is "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll".
+      Reference found at search path location "{TargetFrameworkDirectory}".
+          For SearchPath "{TargetFrameworkDirectory}".
+          Considered "C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.exe", but it didn't exist.
+      This reference is not "CopyLocal" because it's a prerequisite file.
+Done executing task "ResolveAssemblyReference".
+Done building target "ResolveAssemblyReferences" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveTestReferences" skipped, due to false condition; ('@(Shadow)'!='') was evaluated as (''!='').
+Target "AssignTargetPaths" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Task "AssignTargetPath" skipped, due to false condition; ('@(_DeploymentBaseManifestWithTargetPath)'=='' and '%(None.Extension)'=='.manifest') was evaluated as (''=='' and ''=='.manifest').
+Done building target "AssignTargetPaths" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "Warning" skipped, due to false condition; ('@(ResxWithNoCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Task "Warning" skipped, due to false condition; ('@(NonResxWithNoCulture)'!='') was evaluated as (''!='').
+Using "AssignCulture" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "AssignCulture"
+Done executing task "AssignCulture".
+Done building target "SplitResourcesByCulture" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "CreateManifestResourceNames" skipped, due to false condition; ('@(EmbeddedResource)' != '') was evaluated as ('' != '').
+Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Target "CoreResGen" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "GenerateResource" skipped, due to false condition; ( '%(EmbeddedResource.Type)' == 'Resx' and '%(EmbeddedResource.GenerateResource)' != 'false') was evaluated as ( '' == 'Resx' and '' != 'false').
+Done building target "CoreResGen" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Target "PrepareRdlFiles" in file "C:\Program Files\MSBuild\Microsoft\VisualStudio\v9.0\ReportingServices\Microsoft.ReportingServices.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.rdlc') was evaluated as (''=='.rdlc').
+Done building target "PrepareRdlFiles" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "RunRdlCompiler" skipped, due to false condition; ('@(RdlFile)'!='') was evaluated as (''!='').
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveReferences" skipped. Previously built successfully.
+Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Target "_SetExternalWin32ManifestProperties" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "_SetEmbeddedWin32ManifestProperties" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "GetFrameworkPath"
+Done executing task "GetFrameworkPath".
+Done building target "_SetEmbeddedWin32ManifestProperties" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "_GenerateCompileInputs" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithNoCulture)'!='' and '%(ManifestResourceWithNoCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithNoCultureOnDisk)'!='' and '%(ManifestNonResxWithNoCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateCompileInputs" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Exe'=='library')).
+Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (
+            ('$(BuildingInsideVisualStudio)' == 'true')
+            and
+            (
+                ('$(BuildingProject)' == 'false')
+                or
+                ('$(UseHostCompilerIfAvailable)' == 'true')
+            )
+            ) was evaluated as (
+            ('' == 'true')
+            and
+            (
+                ('true' == 'false')
+                or
+                ('true' == 'true')
+            )
+            ).
+Target "CoreCompile" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.CSharp.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+Input files: Properties\AssemblyInfo.cs;Program.cs;C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll;C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll;C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets;C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.CSharp.targets
+Output files: obj\Debug\WhichCSharpCompilerAreYou.pdb;obj\Debug\WhichCSharpCompilerAreYou.exe
+Done building target "CoreCompile" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated' or ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library')) was evaluated as (''=='OnOutputUpdated' or (''=='true' and 'Exe'=='library')).
+Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
+                    ('$(_AssemblyTimestampBeforeCompile)' == '')) and
+                   Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'Exe' != 'library') or
+                    ('' == '')) and
+                   Exists('obj\WhichCSharpCompilerAreYou_2.0.csproj.UnmanagedRegistration.cache')).
+Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_GenerateSatelliteAssemblyInputs" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "Warning" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' and '%(ManifestResourceWithCulture.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Task "Warning" skipped, due to false condition; ('@(ManifestNonResxWithCultureOnDisk)'!='' and '%(ManifestNonResxWithCultureOnDisk.EmittedForCompatibilityOnly)'=='') was evaluated as (''!='' and ''=='').
+Done building target "_GenerateSatelliteAssemblyInputs" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "GenerateSatelliteAssemblies" skipped, due to false condition; ('@(_SatelliteAssemblyResourceInputs)' != '') was evaluated as ('' != '').
+Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Target "GetTargetPath" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Building target "GetTargetPath" completely.
+No input files were specified.
+Done building target "GetTargetPath" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; (@(EmbeddedResource->'%(WithCulture)') != '') was evaluated as ( != '').
+Target "_CopyFilesMarkedCopyLocal" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "Copy" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Copy"
+Done executing task "Copy".
+Done building target "_CopyFilesMarkedCopyLocal" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "AssignTargetPaths" skipped. Previously built successfully.
+Target "_SplitProjectReferencesByFileExistence" skipped. Previously built successfully.
+Target "GetCopyToOutputDirectoryItems" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)' != '' and '$(_GetChildProjectCopyToOutputDirectoryItems)' == 'true' and '%(_MSBuildProjectReferenceExistent.Private)' != 'false') was evaluated as ('' != '' and 'true' == 'true' and '' != 'false').
+Task "AssignTargetPath"
+Done executing task "AssignTargetPath".
+Done building target "GetCopyToOutputDirectoryItems" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "CopyFilesToOutputDirectory" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "Copy"
+  Did not copy from file "obj\Debug\WhichCSharpCompilerAreYou.exe" to file "bin\Debug\WhichCSharpCompilerAreYou.exe" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Done executing task "Copy".
+Task "Message"
+  WhichCSharpCompilerAreYou_2.0 -> C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.exe
+Done executing task "Message".
+Task "Copy"
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+  Did not copy from file "obj\Debug\WhichCSharpCompilerAreYou.pdb" to file "bin\Debug\WhichCSharpCompilerAreYou.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Done executing task "Copy".
+Task "Copy" skipped, due to false condition; ('$(_DocumentationFileProduced)'=='true') was evaluated as ('false'=='true').
+Task "Copy"
+Done executing task "Copy".
+Task "Copy"
+Done executing task "Copy".
+Done building target "CopyFilesToOutputDirectory" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Exe'=='library').
+Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Target "_CleanGetCurrentAndPriorFileWrites" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ReadLinesFromFile"
+Done executing task "ReadLinesFromFile".
+Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "ConvertToAbsolutePath"
+Done executing task "ConvertToAbsolutePath".
+Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "FindUnderPath"
+  Comparison path is "C:\Projects\Samples\WhichCSharpCompilerAreYou".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\ResolveAssemblyReference.cache" is outside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.exe" is outside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.pdb" is outside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.exe" is inside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.pdb" is inside the comparison path.
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\ResolveAssemblyReference.cache" is inside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.exe" is inside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.pdb" is inside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.exe" is outside the comparison path.
+  Path "C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.pdb" is outside the comparison path.
+Done executing task "FindUnderPath".
+Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Done building target "_CleanGetCurrentAndPriorFileWrites" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "IncrementalClean" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "FindUnderPath"
+  Comparison path is "bin\Debug\".
+Done executing task "FindUnderPath".
+Task "FindUnderPath"
+  Comparison path is "obj\Debug\".
+Done executing task "FindUnderPath".
+Using "Delete" task from assembly "Microsoft.Build.Tasks.v3.5, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Task "Delete"
+Done executing task "Delete".
+Task "RemoveDuplicates"
+Done executing task "RemoveDuplicates".
+Task "WriteLinesToFile" skipped, due to false condition; ('@(_CleanUnfilteredPriorFileWrites)'!='@(_CleanUniqueRemainingFileWritesAfterIncrementalClean)') was evaluated as ('C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.exe;C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.pdb;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\ResolveAssemblyReference.cache;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.exe;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.pdb'!='C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.exe;C:\Projects\Samples\WhichCSharpCompilerAreYou\bin\Debug\WhichCSharpCompilerAreYou.pdb;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\ResolveAssemblyReference.cache;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.exe;C:\Projects\Samples\WhichCSharpCompilerAreYou\obj\Debug\WhichCSharpCompilerAreYou.pdb').
+Done building target "IncrementalClean" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "PostBuildEvent" skipped, due to false condition; (
+            '$(PostBuildEvent)'!=''
+            and
+            (
+                '$(RunPostBuildEvent)'!='OnOutputUpdated'
+                or
+                '$(_AssemblyTimestampBeforeCompile)'!='$(_AssemblyTimestampAfterCompile)'
+            )
+        ) was evaluated as (
+            ''!=''
+            and
+            (
+                ''!='OnOutputUpdated'
+                or
+                ''!=''
+            )
+        ).
+Target "CoreBuild" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Task "CallTarget" skipped, due to false condition; ('$(UnloadProjectsOnCompletion)'=='true') was evaluated as (''=='true').
+Task "CallTarget" skipped, due to false condition; ('$(UnloadProjectsOnCompletion)'=='true') was evaluated as (''=='true').
+Task "CallTarget" skipped, due to false condition; ('$(UnloadProjectsOnCompletion)'=='true') was evaluated as (''=='true').
+Done building target "CoreBuild" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Target "Build" in file "C:\WINDOWS\Microsoft.NET\Framework\v3.5\Microsoft.Common.targets" from project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj":
+Building target "Build" completely.
+No input files were specified.
+Done building target "Build" in project "WhichCSharpCompilerAreYou_2.0.csproj".
+Done Building Project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou_2.0.csproj" (default targets).
+Done executing task "MSBuild".
+Task "Message" skipped, due to false condition; (@(SkipLevel0) != '') was evaluated as ( != '').
+Task "Warning" skipped, due to false condition; (@(MissingConfigLevel0) != '') was evaluated as ( != '').
+Done building target "Build" in project "WhichCSharpCompilerAreYou.sln".
+Done Building Project "C:\Projects\Samples\WhichCSharpCompilerAreYou\WhichCSharpCompilerAreYou.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.10

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="Demos">
+		<siteMapNode title="ASP.NET AJAX">
+			<siteMapNode title="Callback Auto-Refresh" url="~/AutoRefresh1.aspx" />
+			<siteMapNode title="UpdatePanel Auto-Refresh" url="~/AutoRefresh2.aspx" />
+			<siteMapNode title="Web Service Auto-Refresh" url="~/AutoRefresh3.aspx" />
+		</siteMapNode>
+		<siteMapNode title="ASP.NET AJAX Extensions">
+			<siteMapNode title="DragOverlayExtender" url="~/DragOverlay.aspx" />
+			<siteMapNode title="Web Methods" url="~/Autofill1.aspx" />
+			<siteMapNode title="Page Methods" url="~/Autofill2.aspx" />
+			<siteMapNode title="JSON" url="~/Json.aspx" />
+			<siteMapNode title="AuthenticationService and ProfileService" url="Login.aspx" />
+		</siteMapNode>
+		<siteMapNode title="Microsoft AJAX Library">
+			<siteMapNode title="Sys.Debug" url="~/Debugging.aspx" />
+			<siteMapNode title="Update Highlighting" url="~/UpdateHighlight.aspx" />
+			<siteMapNode title="Update Confirm" url="~/UpdateConfirm.aspx" />
+<!--
+			<siteMapNode title="Timer" url="~/Timer1.aspx" />
+			<siteMapNode title="SetPropertyAction" url="~/ActionDemo.aspx" />
+-->
+			<siteMapNode title="Controls" url="~/Controls1.aspx" />
+			<siteMapNode title="Simple Data Binding" url="~/SimpleDataBinding.aspx" />
+			<siteMapNode title="Simple Drag-Drop" url="~/SimpleDragDrop.aspx" />
+			<siteMapNode title="Rich Drag-Drop" url="~/ColorDragDrop.aspx" />
+			<siteMapNode title="Animation" url="~/ClientAnimation.aspx" />
+      </siteMapNode>
+    <siteMapNode title="XML Script">
+<!--
+			<siteMapNode title="Timer" url="~/Timer2.aspx" />
+-->
+			<siteMapNode title="Controls" url="~/Controls2.aspx" />
+<!--
+        <siteMapNode title="Animation" url="~/ClientAnimation2.aspx" />
+-->
+		</siteMapNode>
+		<siteMapNode title="ASP.NET AJAX Control Toolkit">
+			<siteMapNode title="AutoCompleteExtender" url="~/AutoComplete.aspx" />
+			<siteMapNode title="TextBox Extenders" url="~/FancyTextBoxes.aspx" />
+			<siteMapNode title="Popup Calendar" url="PopupCalendar.aspx" />
+			<siteMapNode title="Animation Extender" url="~/ToolkitAnimation.aspx" />
+			<siteMapNode title="DropDownList Extender" url="~/CustomExtender.aspx" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PirateShipProvider", "PirateShipProvider\PirateShipProvider.csproj", "{966315CD-7782-4273-A5DF-73AB7EDB94FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PirateShipConsumer", "PirateShipConsumer\PirateShipConsumer.csproj", "{53FC636F-9D75-4DE9-9354-33DAC9C3D805}"
+	ProjectSection(ProjectDependencies) = postProject
+		{966315CD-7782-4273-A5DF-73AB7EDB94FB} = {966315CD-7782-4273-A5DF-73AB7EDB94FB}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HibernatingPirateShip", "HibernatingPirateShip\HibernatingPirateShip.csproj", "{A5C19F86-6715-44D7-BD5C-0DD53421935A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{966315CD-7782-4273-A5DF-73AB7EDB94FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966315CD-7782-4273-A5DF-73AB7EDB94FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966315CD-7782-4273-A5DF-73AB7EDB94FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966315CD-7782-4273-A5DF-73AB7EDB94FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FC636F-9D75-4DE9-9354-33DAC9C3D805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FC636F-9D75-4DE9-9354-33DAC9C3D805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FC636F-9D75-4DE9-9354-33DAC9C3D805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FC636F-9D75-4DE9-9354-33DAC9C3D805}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C19F86-6715-44D7-BD5C-0DD53421935A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C19F86-6715-44D7-BD5C-0DD53421935A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C19F86-6715-44D7-BD5C-0DD53421935A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C19F86-6715-44D7-BD5C-0DD53421935A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

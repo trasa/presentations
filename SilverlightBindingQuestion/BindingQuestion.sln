@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingQuestion", "BindingQuestion\BindingQuestion.csproj", "{9E179C49-F250-4C5F-A568-EA87816E681D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BindingQuestion.Web", "BindingQuestion.Web\BindingQuestion.Web.csproj", "{41BD1BAB-074A-42F7-BB4F-5476AD5B3377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E179C49-F250-4C5F-A568-EA87816E681D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E179C49-F250-4C5F-A568-EA87816E681D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E179C49-F250-4C5F-A568-EA87816E681D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E179C49-F250-4C5F-A568-EA87816E681D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41BD1BAB-074A-42F7-BB4F-5476AD5B3377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41BD1BAB-074A-42F7-BB4F-5476AD5B3377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41BD1BAB-074A-42F7-BB4F-5476AD5B3377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41BD1BAB-074A-42F7-BB4F-5476AD5B3377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTester", "http://localhost/UnitTester/UnitTester.csproj", "{608D0F18-8031-4739-A096-0EEDEC1CEEEC}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTObjects", "UTObjects\UTObjects.csproj", "{CED676FB-80FB-4A93-8B1F-81DB8AA64D54}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UTTest", "UTTest\UTTest.csproj", "{E1A14446-24AA-4853-A215-1C068DC99F2E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{608D0F18-8031-4739-A096-0EEDEC1CEEEC}.Debug.ActiveCfg = Debug|.NET
+		{608D0F18-8031-4739-A096-0EEDEC1CEEEC}.Debug.Build.0 = Debug|.NET
+		{608D0F18-8031-4739-A096-0EEDEC1CEEEC}.Release.ActiveCfg = Release|.NET
+		{608D0F18-8031-4739-A096-0EEDEC1CEEEC}.Release.Build.0 = Release|.NET
+		{CED676FB-80FB-4A93-8B1F-81DB8AA64D54}.Debug.ActiveCfg = Debug|.NET
+		{CED676FB-80FB-4A93-8B1F-81DB8AA64D54}.Debug.Build.0 = Debug|.NET
+		{CED676FB-80FB-4A93-8B1F-81DB8AA64D54}.Release.ActiveCfg = Release|.NET
+		{CED676FB-80FB-4A93-8B1F-81DB8AA64D54}.Release.Build.0 = Release|.NET
+		{E1A14446-24AA-4853-A215-1C068DC99F2E}.Debug.ActiveCfg = Debug|.NET
+		{E1A14446-24AA-4853-A215-1C068DC99F2E}.Debug.Build.0 = Debug|.NET
+		{E1A14446-24AA-4853-A215-1C068DC99F2E}.Release.ActiveCfg = Release|.NET
+		{E1A14446-24AA-4853-A215-1C068DC99F2E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

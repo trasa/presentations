@@ -1,0 +1,104 @@
+<%@ Master Language="C#" CodeFile="Site.master.cs" Inherits="Site_master" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Atlas</title>
+    <!--
+    <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(duration=.25)" />
+-->
+    <link href="Atlas.css" rel="stylesheet" type="text/css" />
+</head>
+<body topmargin="0" leftmargin="0" rightmargin="0" style="height: 100%">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="True" EnablePageMethods="true"
+            runat="server">
+            <Scripts>
+                <asp:ScriptReference Name="PreviewScript.js" Assembly="Microsoft.Web.Preview" />
+            </Scripts>
+        </asp:ScriptManager>
+        <table width="100%" cellspacing="0" cellpadding="0">
+            <!-- Banner -->
+            <tr class="header">
+                <td colspan="3">
+                    <asp:Image ID="BannerImage" ImageUrl="~/Images/headertop_img.jpg" ImageAlign="Middle"
+                        runat="server" />
+                </td>
+            </tr>
+            <!-- 1-pixel border -->
+            <tr height="1px" bgcolor="gray">
+                <td width="32px">
+                </td>
+                <td width="1px">
+                </td>
+                <td>
+                </td>
+            </tr>
+            <!-- Description -->
+            <tr bgcolor="lightyellow">
+                <td>
+                    <table width="100%" cellspacing="0" cellpadding="4">
+                        <tr>
+                            <td>
+                                <asp:ContentPlaceHolder ID="Description" runat="server">
+                                    Description goes here
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- 1-pixel border -->
+            <tr height="1px" bgcolor="gray">
+                <td width="32px">
+                </td>
+                <td width="1px">
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+        <table cellpadding="0" cellspacing="0" style="width: 100%; height: 600px">
+            <tr>
+                <td valign="top" width="128px" bgcolor="Lavender">
+                    <table cellpadding="8">
+                        <tr>
+                            <td>
+                                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                                <asp:UpdatePanel ID="UpdatePanel1" UpdateMode="Conditional" runat="server">
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="TreeView1" EventName="TreeNodeCollapsed" />
+                                        <asp:AsyncPostBackTrigger ControlID="TreeView1" EventName="TreeNodeExpanded" />
+                                    </Triggers>
+                                    <ContentTemplate>
+                                        <asp:TreeView ID="TreeView1" runat="server" Font-Size="8pt" DataSourceID="SiteMapDataSource1"
+                                            Width="100%" NodeIndent="10" OnTreeNodeCollapsed="TreeView1_TreeNodeCollapsed"
+                                            OnDataBound="TreeView1_DataBound" OnTreeNodeExpanded="TreeView1_TreeNodeExpanded">
+                                            <SelectedNodeStyle BackColor="#C0C0FF" />
+                                            <LevelStyles>
+                                                <asp:TreeNodeStyle Font-Bold="true" />
+                                            </LevelStyles>
+                                        </asp:TreeView>
+                                    </ContentTemplate>
+                                </asp:UpdatePanel>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td width="9px" style="background-image: url(Images/Shadow.jpg); background-repeat: repeat-y">
+                </td>
+                <td valign="top">
+                    <table width="100%" cellpadding="16">
+                        <tr>
+                            <td valign="top">
+                                <asp:ContentPlaceHolder ID="Main" runat="server" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

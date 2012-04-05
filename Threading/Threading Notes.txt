@@ -1,0 +1,43 @@
+------------------------------------------------------------------------------
+2: TERMINOLOGY
+Unsafe = Undefined
+
+Race condition:
+Irregular behavior of a program due to unexpected critical dependence on the relative timing of events. For example, two different processes may be simultaneously reading from and writing to the same file, resulting in data read not being up-to-date. 
+
+Deadlock: northbound and southbound Zax
+
+
+------------------------------------------------------------------------------
+3: PERFORMANCE
+Only 1 thread runs at a time, per CPU – so queuing up 1000s of threads to do things won’t make anything faster.
+They’re all competing for the same resources.  Switching between Threads is costly (but not as costly as some other types of context switching)
+
+Multiple threads can run on multi-core or multi-cpu systems.
+
+Use threads for user experience / responsiveness issues, or for other cases where having multiple units of work executing makes sense.  Don’t use threads when you don’t have to!
+
+
+------------------------------------------------------------------------------
+4: THREADS
+ASP.NET:
+	Inherently Multithreaded
+	Don’t Create new Threads!!
+
+WinForms:
+	UI thread concerns
+	example of safe and unsafe thread creation
+
+------------------------------------------------------------------------------
+5: THREAD.ABORT
+
+Thread.Abort merely causes ThreadAbortException to be raised.  This exception can be caught, 
+
+.Net 1.x had a bug where Thread.Abort() at just the ‘wrong’ time would cause a finally block to fail to be executed – this might lead to very unsafe conditions.  (Race Conditions)
+
+Recommended: Only use Thread.Abort() in a situation where your application is coming to a halt anyway.  Thread.Abort may leave your application in an inconsistent state.  
+
+Don’t use Suspend or Resume either, for basically the same reasons.  See Mutex, ManualResetEvent, AutoResetEvent, and other synchronization objects.
+
+
+------------------------------------------------------------------------------

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stocks>
+	<Stock Symbol="AMZN" Price="48.0" Change="0.6" Low="42.1" High="51.0" />
+	<Stock Symbol="INTC" Price="25.5" Change="-3.2" Low="22.8" High="32.4" />
+	<Stock Symbol="MSFT" Price="33.0" Change="8.0" Low="24.4" High="34.5" />
+</Stocks>

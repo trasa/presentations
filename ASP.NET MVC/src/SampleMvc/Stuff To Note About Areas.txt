@@ -1,0 +1,15 @@
+* Divided into Projects
+
+* No VS Tooling support for any of this (yet)
+	(Really Important: Requires Hand-hacking of the sln at this point)	
+
+* Two Types of Areas: Main (Parent) and Child
+* Account and Store are slimmed down MVC Projects (they'll inherit some settings from the Main Area)
+* Account.Routes.cs & Store.Routes.cs
+* Main/Views/Shared/LogOnUserControl.ascx -- Cross-Area Linking Example
+
+* You may be disappointed by this implementation of Areas.
+
+
+
+area walkthrough: http://msdn.microsoft.com/en-us/library/ee307987(VS.100).aspx

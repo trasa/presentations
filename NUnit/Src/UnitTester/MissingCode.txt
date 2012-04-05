@@ -1,0 +1,9 @@
+<asp:RequiredFieldValidator Runat="server" ID="reqvalName" ControlToValidate="txtName" Display="Dynamic">
+You must enter a name.
+</asp:RequiredFieldValidator>
+<asp:CompareValidator Runat="server" ID="cmpvalBalance" ControlToValidate="txtBalance" Type="Currency" Operator="DataTypeCheck" Display="Dynamic">
+	Balance must be a valid number.
+</asp:CompareValidator>
+<asp:RequiredFieldValidator Runat="server" ID="reqvalBalance" ControlToValidate="txtBalance" Display="Dynamic">
+	You must enter a balance.
+</asp:RequiredFieldValidator>

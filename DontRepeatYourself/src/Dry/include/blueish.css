@@ -1,0 +1,175 @@
+/* 
+This design and css comes from "blueish" sample by
+Minimalistic Design - http://www.minimalistic-design.net
+
+base color: #024294
+
+darker: #1406A1
+darkest: #0623AB
+
+lighter: #067AAB
+lightest: 069CA1
+*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+body
+{
+	font: 12px Verdana, Arial, sans-serif;
+	background: #fff url(/images/backi.jpg) repeat-x top;
+	color: #111;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+
+img
+{
+	border: none;
+}
+ul
+{
+	padding: 0;
+	margin: 0;
+}
+li
+{
+	list-style-type: none;
+}
+
+a
+{
+	color: #024294;
+	background-color: transparent;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #000;
+}
+
+#wrap
+{
+	margin: 10pt;
+}
+
+#header
+{
+	background: transparent;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+#header h1
+{
+	color: #fff;
+	font-size: 150%;
+	margin: 0;
+	font-weight: 100;
+}
+#header h1 a
+{
+	font-weight: 100;
+	text-decoration: none;
+	color: #fff;
+}
+#header h2
+{
+	color: #eee;
+	font-size: 120%;
+	margin: 0;
+	font-weight: 100;
+}
+
+#breadcrumbs
+{
+	background: #eee;
+	padding: 2px 5px 2px 5px;
+	font-size: 11px;
+	margin: 7px 0px 0px 0px;
+}
+
+#center
+{
+	float: left;
+	background: #fff;
+	padding: 0px 10px 10px 10px;
+	margin-top: 10px;
+}
+#center h2
+{
+	font-size: 12px;
+	margin: 5px 0 5px 0;
+}
+#center h2 a
+{
+	text-decoration: none;
+}
+
+
+
+
+
+#right
+{
+	float: right;
+	background: #fff;
+	border-top: 1px solid #CFCFCF;
+	padding: 0px 10px 10px 10px;
+	margin-top: 10px;
+}
+#right h2
+{
+	font-size: 12px;
+	margin: 5px 0 5px 0;
+}
+#right h2 a
+{
+	text-decoration: none;
+}
+
+#left
+{
+	float: left;
+	width: 250px;
+	background: #eee;
+	border-top: 1px solid #CFCFCF;
+	margin-top: 10px;
+	padding: 10px;
+}
+#left h2
+{
+	font-size: 100%;
+	margin: 10px 0 5px 5px;
+}
+#left ul
+{
+	padding-left: 10px;
+}
+
+#footer
+{
+	font-size: 11px;
+	padding: 5px;
+	border-top: 1px solid #a0a0a0;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#clear
+{
+	clear: both;
+}
+
+
+.caption 
+{
+	font-style: italic;
+	font-size: 8px;
+	color: #067AAB;
+}
+

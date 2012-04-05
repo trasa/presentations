@@ -1,0 +1,51 @@
+﻿body { font-family: verdana; font-size: 10pt; }
+input { font-family: verdana; font-size: 10pt; }
+
+.header
+{
+    background-image: url(Images/header-bg.jpg);
+}
+
+.headline
+{
+    color: white;
+    font-family: verdana;
+    font-size: 24pt;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.img-shadow
+{
+    float:left;
+    background: url(Images/shadows.gif) no-repeat bottom right;
+    margin: 10px 0 0 5px;
+}
+
+.img-shadow img
+{
+    display: block;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #a9a9a9;
+    margin: -6px 6px 6px -6px;
+    padding: 4px;
+}
+
+.popupCalendar
+{
+    background-color: White;
+    position: absolute;
+    visibility: hidden;
+}
+
+.highlight 
+{
+    background-color: lemonchiffon; 
+}
+
+.watermark
+{
+/*	background-color:#F0F8FF; */
+	color:gray;
+}	

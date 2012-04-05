@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="LinqConcurrencyTest" EntityNamespace="LinqConcurrency" ContextNamespace="LinqConcurrency" Class="SearchResultsContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=LinqConcurrencyTest;Integrated Security=True" SettingsObjectName="LinqConcurrency.Properties.Settings" SettingsPropertyName="LinqConcurrencyTestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.SearchResults" Member="SearchResults">
+    <Type Name="SearchResult">
+      <Column Name="ResultId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ResultName" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ResultCategoryID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

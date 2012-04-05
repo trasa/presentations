@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Missile.master.cs" Inherits="MissileCommand.Web.Missile" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Missile Command</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="include/style.css" media="screen" />
+</head>
+<body>
+<form runat="server" id="form">
+    <div id="wrap">
+        <div id="header">
+            <h1>Missile Command</h1>
+            <h2>Lets Shoot Down Stuff</h2>
+        </div>
+        <div id="breadcrumbs">
+            <asp:ContentPlaceHolder ID="BreadCrumbContent" runat="server">
+                You are here : <a href="#">Home</a> <!-- &middot; <a href="http://www.minimalistic-design.net">Free Css Templates</a> &middot; Blueish 2 Column-->
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="right">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                <div style="float: right; padding: 10px;">
+                    right picture goes here
+                </div>
+                <h2>Lorem Ipsum dolor.....</h2>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce fermentum neque
+                eget nisl. Quisque tincidunt. Proin dictum laoreet dui. Nulla justo. Quisque tortor
+                sapien, gravida nec, sollicitudin non, placerat eu, lectus. Morbi placerat. Quisque
+                ipsum turpis, placerat eu, pretium vitae, mattis vitae, nunc. Maecenas at turpis
+                a magna hendrerit luctus. Pellentesque auctor dui sit amet nulla vehicula auctor.
+                Fusce purus felis, congue a, placerat vitae, vestibulum vitae, nulla. Fusce ultrices
+                purus quis purus. Nulla facilisi. Quisque consectetuer diam et magna.
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="left">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="Default.aspx">Home</a></li>
+                <li><a href="satellites.aspx">Launch Satellites</a></li>
+                <li><a href="launchsites.aspx">Create Launch Sites</a></li>
+            </ul>
+        </div>
+        <div id="clear"></div>
+        <div id="footer">Application by Tony Rasa &middot; Sample Web Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a></div>
+    </div>
+</form>
+</body>
+</html>
